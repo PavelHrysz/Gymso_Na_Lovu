@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovec</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <style>
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: radial-gradient(circle at center, #2e0a0a 0%, #000000 100%);
+        font-family: 'Segoe UI', Roboto, sans-serif;
+        margin: 0;
+        color: white;
+        user-select: none;
+            overflow: hidden;
+        }
+
+        /* Schování scrollbarů */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        * {
+            scrollbar-width: none;
+    }
+
+    #question-text {
+        font-size: 2.2em;
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 25px;
+        width: 85%;
+        max-width: 900px;
+        background: rgba(255, 255, 255, 0.03);
+        border-radius: 20px;
+        border-bottom: 4px solid #ff4500;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+        color: #ff4500;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        hyphens: auto;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 90%;
+        max-width: 800px;
+    }
+
+    button {
+        position: relative;
+        padding: 25px 30px;
+        font-size: 1.8em;
+        border: 2px solid rgba(255,255,255,0.05);
+        border-radius: 12px;
+        cursor: pointer;
+        transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+        background: linear-gradient(180deg, #1a1a1a 0%, #0a0a0a 100%);
+        color: #ddd;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        hyphens: auto;
+    }
+
+    button:active {
+        transform: translateY(4px);
+        filter: brightness(1.3);
+    }
+
+    .label {
+        background: rgba(255, 69, 0, 0.1);
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        margin-right: 20px;
+        color: #ff4500;
+        font-weight: 900;
+        border: 1px solid rgba(255, 69, 0, 0.3);
+    }
+
+    button.selected {
+        background: linear-gradient(180deg, #8b0000 0%, #ff4500 100%);
+        border-color: #ff8c00;
+        box-shadow: 0 0 40px rgba(255, 69, 0, 0.7), inset 0 0 15px rgba(255,255,255,0.3);
+        transform: scale(1.02);
+        z-index: 2;
+        color: white;
+    }
+
+    button.selected .label {
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        border-color: white;
+    }
+
+    @keyframes fadeInLovec {
+        from { opacity: 0; transform: scale(0.95); }
+        to { opacity: 1; transform: scale(1); }
+    }
+
+    .animate-question {
+        animation: fadeInLovec 0.4s ease-out;
+    }
+
+    #answers-display {
+        font-weight: bold;
+        color: #ff4500;
+        text-shadow: 0 0 10px rgba(255,69,0,0.5);
+    }
+</style>
+</head>
+<body>
+
+    <div id="question-text">Čekám na otázku pro lovce...</div>
+
+    <div id="answers-display" style="display: none; margin-bottom: 20px; padding: 15px; background: rgba(255,69,0,0.2); border-radius: 10px; text-align: center; font-size: 1.2em;">
+        <div id="correct-answer">Správná odpověď: <span id="correct-letter">-</span></div>
+        <div id="player-answer">Odpověď hráče: <span id="player-letter">-</span></div>
+    </div>
+
+    <div class="buttons">
+        <button id="btnA" onclick="selectOption('A')"><span class="label">A</span> <span id="textA">---</span></button>
+        <button id="btnB" onclick="selectOption('B')"><span class="label">B</span> <span id="textB">---</span></button>
+        <button id="btnC" onclick="selectOption('C')"><span class="label">C</span> <span id="textC">---</span></button>
+    </div>
+
+    <script>
+        const socket = io();
+        let questionsABC = [];
+        let currentABCIndex = 0;
+        let canAnswer = false; // Flaj pro povolení odpovídání v 7vteřinovém okně
+
+        // --- PŘÍJEM DAT ---
+        socket.on("connect", () => {
+            socket.emit("dejMiVsechnyOtazky");
+            socket.emit("dejMiAktualniIndex");
+        });
+
+        // Poslechnutí signálu k povolení odpovídání (7 sekund)
+        socket.on("enableAnswers", (data) => {
+            canAnswer = true;
+            console.log("Odpovědi povoleny na 7 sekund");
+        });
+        // Poslechnutí signálu k zakázání odpovědání
+        socket.on("disableAnswers", () => {
+            canAnswer = false;
+            console.log("Odpovědi byly zakázány");
+
+        });
+        socket.on("posilamVsechnyOtazky", (data) => {
+            questionsABC = data;
+            updateDisplay();
+        });
+
+        socket.on("posilamAktualniIndex", (index) => {
+            currentABCIndex = index;
+            resetSelection();
+            updateDisplay();
+        });
+
+        socket.on("dalsiOtazka", (index) => {
+            currentABCIndex = index;
+            resetSelection();
+            updateDisplay();
+            // Reset answers display
+            document.getElementById("answers-display").style.display = "none";
+            document.getElementById("correct-letter").textContent = "-";
+            document.getElementById("player-letter").textContent = "-";
+            if (navigator.vibrate) navigator.vibrate(100);
+        });
+
+        // Show correct answer
+        socket.on("ukazzpravnou", (data) => {
+            document.getElementById("correct-letter").textContent = data.correctAnswer;
+            document.getElementById("answers-display").style.display = "block";
+        });
+
+        // Show player's answer
+        socket.on("odpovedhrac", (data) => {
+            if (data && data.playerAnswer) {
+                document.getElementById("player-letter").textContent = data.playerAnswer;
+                document.getElementById("answers-display").style.display = "block";
+            }
+        });
+
+        function updateDisplay() {
+    if (!questionsABC || !questionsABC[currentABCIndex]) return;
+
+    const qElement = document.getElementById("question-text");
+    const q = questionsABC[currentABCIndex];
+
+    qElement.classList.remove("animate-question");
+    void qElement.offsetWidth; 
+    qElement.classList.add("animate-question");
+
+    qElement.innerText = q.question;
+    
+    document.getElementById("textA").innerText = q.answers[0].text;
+    document.getElementById("textB").innerText = q.answers[1].text;
+    document.getElementById("textC").innerText = q.answers[2].text;
+}
+
+        function selectOption(choice) {
+            // Zablokovat odpovědi mimo 7vteřinové okno
+            if (!canAnswer) {
+                console.log("Odpovědi nejsou v tuto dobu povoleny");
+                return;
+            }
+
+            resetSelection();
+            document.getElementById("btn" + choice).classList.add("selected");
+
+            if (navigator.vibrate) {
+                navigator.vibrate(50);
+            }
+
+            
+            socket.emit("lovec", choice);
+            console.log("Lovec zvolil: " + choice);
+        }
+
+        function resetSelection() {
+            document.getElementById("btnA").classList.remove("selected");
+            document.getElementById("btnB").classList.remove("selected");
+            document.getElementById("btnC").classList.remove("selected");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug - Projection Setup</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            background: linear-gradient(135deg, #0a1628 0%, #0f1f30 50%, #0a1628 100%);
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 50px;
+            padding: 40px;
+            position: relative;
+                overflow: hidden;
+        }
+
+        /* Schování scrollbarů */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        * {
+            scrollbar-width: none;
+        }
+
+        /* Grid background effect */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                linear-gradient(0deg, transparent 24%, rgba(100, 200, 255, 0.05) 25%, rgba(100, 200, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(100, 200, 255, 0.05) 75%, rgba(100, 200, 255, 0.05) 76%, transparent 77%, transparent),
+                linear-gradient(90deg, transparent 24%, rgba(100, 200, 255, 0.05) 25%, rgba(100, 200, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(100, 200, 255, 0.05) 75%, rgba(100, 200, 255, 0.05) 76%, transparent 77%, transparent);
+            background-size: 100px 100px;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .header-info {
+            font-size: 0.85rem;
+            color: #64c8ff;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        h1 {
+            font-size: 8rem;
+            font-weight: 700;
+            color: #fff;
+            margin: 0;
+            letter-spacing: 8px;
+            text-shadow: 0 0 30px rgba(100, 200, 255, 0.3);
+        }
+
+        .label {
+            font-size: 1.8rem;
+            color: #64c8ff;
+            margin-top: 15px;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-top: 30px;
+            font-size: 1rem;
+            color: #8ab4d5;
+        }
+
+        .info-item {
+            text-align: center;
+        }
+
+        .info-label {
+            font-size: 0.8rem;
+            color: #5a8aad;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .info-value {
+            font-size: 1.2rem;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        /* Color test bar */
+        .color-test {
+            width: 100%;
+            max-width: 800px;
+            height: 50px;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 3px;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 30px rgba(100, 200, 255, 0.2);
+            margin-top: 40px;
+        }
+
+        .color-swatch {
+            transition: transform 0.2s;
+        }
+
+        .color-swatch:hover {
+            transform: scaleY(1.3);
+        }
+
+        .color-white { background: #ffffff; }
+        .color-red { background: #ff3333; }
+        .color-green { background: #2ecc71; }
+        .color-blue { background: #00d4ff; }
+        .color-yellow { background: #ffcc00; }
+        .color-black { background: #111111; }
+
+        .test-label {
+            font-size: 0.75rem;
+            color: #5a8aad;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 15px;
+            font-weight: 500;
+        }
+
+        /* Subtle corner accents */
+        .corner {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border: 2px solid rgba(100, 200, 255, 0.3);
+            z-index: 2;
+        }
+
+        .corner-tl { top: 40px; left: 40px; border-right: none; border-bottom: none; }
+        .corner-tr { top: 40px; right: 40px; border-left: none; border-bottom: none; }
+        .corner-bl { bottom: 40px; left: 40px; border-right: none; border-top: none; }
+        .corner-br { bottom: 40px; right: 40px; border-left: none; border-top: none; }
+    </style>
+</head>
+<body>
+    <div class="corner corner-tl"></div>
+    <div class="corner corner-tr"></div>
+    <div class="corner corner-bl"></div>
+    <div class="corner corner-br"></div>
+
+    <div class="content">
+        <div class="header-info">Setup obrazovek</div>
+        
+        <h1 id="indexNumber">?</h1>
+        <div class="label" id="indexLabel">Inicializace...</div>
+
+        <div class="info">
+            <div class="info-item">
+                <div class="info-label">Zařízení</div>
+                <div class="info-value" id="deviceType">—</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Rozlišení</div>
+                <div class="info-value" id="resolution">—</div>
+            </div>
+        </div>
+
+        <div class="color-test">
+            <div class="color-swatch color-white"></div>
+            <div class="color-swatch color-red"></div>
+            <div class="color-swatch color-green"></div>
+            <div class="color-swatch color-blue"></div>
+            <div class="color-swatch color-yellow"></div>
+            <div class="color-swatch color-black"></div>
+        </div>
+        <div class="test-label">Barevný test</div>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const index = params.get('index') || '?';
+        
+        const labels = {
+            '1': 'Projektor',
+            '2': 'Nakloněná plocha',
+            '3': 'Pozadí',
+            '4': 'Hráč',
+            '5': 'Lovec'
+        };
+
+        const devices = {
+            '1': 'Server, audio, projektor',
+            '2': 'Nakloněná obrazovka',
+            '3': 'Pozadí panel',
+            '4': 'Hráčův tablet',
+            '5': 'Lovcův tablet'
+        };
+
+        document.getElementById('indexNumber').textContent = index;
+        document.getElementById('indexLabel').textContent = labels[index] || 'Neznámé';
+        document.getElementById('deviceType').textContent = devices[index] || '?';
+        document.getElementById('resolution').textContent = `${window.innerWidth}×${window.innerHeight}`;
+    </script>
+</body>
+</html>

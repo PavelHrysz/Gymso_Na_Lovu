@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>ŠTÁB - Scénář a Komunikace</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <style>
+        body { background: #111; color: white; font-family: 'Segoe UI', sans-serif; margin: 0; display: flex; height: 100vh; overflow: hidden; }
+
+        .sidebar { width: 350px; background: #1a1a1a; border-right: 2px solid #333; display: flex; flex-direction: column; padding: 20px; gap: 20px; }
+        
+        .main-content { flex: 1; display: flex; flex-direction: column; background: #050505; }
+        .scenar-header { padding: 15px 30px; background: #222; border-bottom: 1px solid #444; color: #f1c40f; font-weight: bold; text-transform: uppercase; }
+        #scenar-box { flex: 1; padding: 40px; overflow-y: auto; white-space: pre-wrap; font-size: 1.25em; line-height: 1.6; color: #ddd; font-family: 'Georgia', serif; }
+
+        .section-title { font-size: 0.8em; color: #666; text-transform: uppercase; margin-bottom: 5px; }
+        input { background: #000; border: 1px solid #444; color: white; padding: 12px; border-radius: 5px; width: calc(100% - 26px); font-size: 1em; }
+        .btn-group { display: flex; gap: 10px; }
+        .btn { flex: 1; padding: 15px; border: none; border-radius: 8px; cursor: pointer; font-size: 1.5em; transition: 0.2s; }
+        .btn-up { background: #27ae60; color: white; }
+        .btn-down { background: #c0392b; color: white; }
+        .btn-send { background: #2980b9; color: white; font-size: 1em; padding: 10px; }
+        .btn-clear { background: #444; color: #ccc; font-size: 0.9em; padding: 10px; }
+        .btn:active { transform: scale(0.95); }
+
+        .timers-section { display: flex; gap: 15px; margin-bottom: 15px; }
+        .timer-box { flex: 1; background: #222; padding: 15px; border-radius: 8px; border: 1px solid #444; text-align: center; }
+        .timer-label { font-size: 0.75em; color: #666; text-transform: uppercase; margin-bottom: 8px; }
+        .timer-display { font-size: 2.5em; font-weight: bold; color: #f1c40f; font-family: 'Courier New', monospace; letter-spacing: 0.05em; }
+        .timer-box.hidden { display: none; }
+
+        /* Styles for questions */
+        .content-block { flex: 1; padding: 40px; overflow-y: auto; display: none; }
+        .active-block { display: block; }
+        #cards-stack { display: flex; flex-direction: column; gap: 12px; padding: 10px; }
+        .q-card {
+            background: #2c3e50;
+            border-left: 8px solid #f1c40f;
+            padding: 18px 25px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: transform 0.3s ease-in, opacity 0.3s ease, max-height 0.4s ease, margin-top 0.4s ease, padding 0.4s ease;
+            overflow: hidden;
+            max-height: 500px;
+            position: relative;
+        }
+        .q-card.dismissed {
+            transform: translateX(120%) rotate(10deg);
+            opacity: 0;
+            max-height: 0 !important;
+            margin-top: -12px !important;
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+            pointer-events: none;
+        }
+        .q-card .question { 
+            font-size: 1.5em; color: #fff; flex: 2; 
+            word-wrap: break-word; overflow-wrap: break-word; word-break: break-word;
+            hyphens: auto;
+        }
+        .q-card .answer { 
+            font-size: 1.6em; font-weight: bold; color: #2ecc71; 
+            background: rgba(0,0,0,0.2); padding: 8px 20px; 
+            border-radius: 5px; min-width: 140px; text-align: center; border-left: 1px solid #444;
+            word-wrap: break-word; overflow-wrap: break-word; word-break: break-word;
+            hyphens: auto;
+        }
+        .option { 
+            background: #222; padding: 15px; margin-top: 10px; border-radius: 5px; 
+            border-left: 5px solid #444; font-size: 1.5em;
+            word-wrap: break-word; overflow-wrap: break-word; word-break: break-word;
+            hyphens: auto;
+        }
+        .correct-hint { border-left-color: #27ae60; background: #1e3d2b; }
+        .question-header { padding: 15px 30px; background: #222; border-bottom: 1px solid #444; color: #f1c40f; font-weight: bold; text-transform: uppercase; display: flex; justify-content: space-between; align-items: center; }
+        #finale-toggle-container { display: none; gap: 10px; }
+        #finale-toggle-container button { background: #444; color: white; border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer; font-weight: bold; }
+        #finale-toggle-container button.active { background: #e74c3c; }
+    </style>
+</head>
+<body>
+
+<div class="sidebar">
+    <div>
+        <div class="section-title">Zpráva pro moderátora</div>
+        <input type="text" id="msgInput" placeholder="Napiš instrukci...">
+        <button class="btn btn-send" style="width: 100%; margin-top: 10px;" onclick="sendText()">ODESLAT TEXT</button>
+    </div>
+
+    <div>
+        <div class="section-title">Rychlá reakce</div>
+        <div class="btn-group">
+            <button class="btn btn-up" onclick="sendThumb('up')">👍</button>
+            <button class="btn btn-down" onclick="sendThumb('down')">👎</button>
+        </div>
+    </div>
+
+    <div style="margin-top: auto;">
+    <div style="background: #222; padding: 20px; border-radius: 15px; border: 1px solid #444; margin-bottom: 15px;">
+        <div class="section-title">ČASOVAČE - SCÉNY</div>
+        <div class="timers-section">
+            <div class="timer-box hidden" id="timer-box-scene3">
+                <div class="timer-label">Scéna 3</div>
+                <div class="timer-display" id="timer-scene3">01:00</div>
+            </div>
+            <div class="timer-box hidden" id="timer-box-scene6">
+                <div class="timer-label">Scéna 6</div>
+                <div class="timer-display" id="timer-scene6">02:00</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #222; padding: 20px; border-radius: 15px; text-align: center; border: 1px solid #444;">
+    <div class="section-title">POČÍTADLO / ČÁSTKA</div>
+    <div id="counter-display" style="font-size: 3.5em; font-weight: bold; color: #f1c40f; margin: 10px 0; overflow: hidden;">0</div>
+    
+    <div class="btn-group" style="display: flex; gap: 10px;">
+        <button class="btn" style="background: #e67e22; flex: 1;" onclick="changeCounter(-1)">−</button>
+        <button class="btn btn-up" style="flex: 2;" onclick="changeCounter(1)">+</button>
+    </div>
+    
+    <button class="btn-clear" style="margin-top: 15px; width: 100%; background: none; border: 1px solid #444; color: #666; cursor: pointer; padding: 5px;" onclick="resetCounter()">Resetovat vše</button>
+</div>
+    </div>
+</div>
+
+<div class="main-content">
+    <div class="scenar-header">Aktuální scénář (Google Docs)</div>
+    <div id="scenar-box" class="content-block active-block">Načítám scénář...</div>
+
+    <div id="block-text" class="content-block">
+        <div class="question-header">
+            <span id="text-block-title">RYCHLÉ OTÁZKY</span>
+            <div id="finale-toggle-container" style="display: none; gap: 10px;">
+                <button id="btn-set-hraci" onclick="setFinaleSet('hraci')" class="active">HRÁČI</button>
+                <button id="btn-set-lovec" onclick="setFinaleSet('lovec')">LOVEC</button>
+            </div>
+            <button onclick="resetFinaleOtazky()" style="background: #e74c3c; color: white; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer; font-size: 0.6em;">RESETUJ FINÁLE</button>
+        </div>
+        <div id="cards-stack"></div>
+    </div>
+
+    <div id="block-abc" class="content-block">
+        <div class="question-header">OTÁZKA S VOLBOU (2. KOLO)</div>
+        <div id="display-abc-q" style="color: #f1c40f; margin-bottom: 20px; font-size: 1.8em; word-wrap: break-word; overflow-wrap: break-word; word-break: break-word; hyphens: auto;">---</div>
+        <div id="opt-A" class="option">A: ---</div>
+        <div id="opt-B" class="option">B: ---</div>
+        <div id="opt-C" class="option">C: ---</div>
+    </div>
+</div>
+
+<script>
+    const socket = io();
+
+socket.on("connect", () => {
+    console.log("Připojeno k serveru, žádám o scénář a počítadlo...");
+    socket.emit("dejMiScenar");
+    socket.emit("dejMiCounter");
+    socket.emit("dejMiAktualniScenu");
+    socket.emit("dejMiRychleOtazky");
+    socket.emit("dejMiVsechnyOtazky");
+    socket.emit("dejMiAktualniIndex");
+    socket.emit("dejMiFinaleOtazky");
+    socket.emit("dejMiLovecOtazky");
+});
+
+// Příjem textu scénáře
+socket.on("scenarUpdate", (text) => {
+    const box = document.getElementById("scenar-box");
+    if (text) {
+        box.innerText = text;
+    } else {
+        box.innerText = "Scénář je prázdný nebo nebyl nalezen.";
+    }
+});
+
+socket.on("lovecOtazkyUpdate", (data) => {
+    console.log("📥 lovecOtazkyUpdate přijato:", data);
+    lovecOtazky = data.otazky || [];
+    lovecIndex = data.index || 0;
+    renderVsechnyKarty();
+});
+
+socket.on("lovecIndexUpdate", (newIndex) => {
+    lovecIndex = newIndex;
+    renderVsechnyKarty();
+});
+
+socket.on("otazkyNacteny", (data) => { questionsABC = data; refreshABC(); });
+socket.on("posilamVsechnyOtazky", (data) => { questionsABC = data; refreshABC(); });
+socket.on("posilamAktualniIndex", (index) => { currentABCIndex = index; refreshABC(); });
+socket.on("dalsiOtazka", (index) => { currentABCIndex = index; refreshABC(); });
+
+socket.on("rychleOtazkyUpdate", (data) => {
+    localRychleOtazky = data.otazky || [];
+    localRychleIndex = data.index || 0;
+    renderVsechnyKarty();
+});
+socket.on("rychleIndexUpdate", (newIndex) => {
+    localRychleIndex = newIndex;
+    renderVsechnyKarty();
+});
+
+socket.on("finaleOtazkyUpdate", (data) => {
+    console.log("Finále otázky přijaty");
+    finaleOtazky = data.otazky || [];
+    finaleIndex = data.index || 0;
+    renderVsechnyKarty();
+});
+
+socket.on("finaleIndexUpdate", (newIndex) => {
+    finaleIndex = newIndex;
+    renderVsechnyKarty();
+});
+
+    function sendText() {
+        const input = document.getElementById("msgInput");
+        if (input.value.trim() !== "") {
+            socket.emit("posliPalec", { typ: 'text', zprava: input.value });
+            input.value = "";
+        }
+    }
+
+    function sendThumb(typ) {
+        socket.emit("posliPalec", { typ: typ });
+    }
+
+    document.getElementById("msgInput").addEventListener("keypress", (e) => {
+        if (e.key === "Enter") sendText();
+    });
+
+socket.on("counterUpdate", (value) => {
+    const el = document.getElementById("counter-display");
+    if (el) {
+        el.innerText = value.toLocaleString('cs-CZ');
+    }
+});
+
+let timerScene3 = 60;
+let timerScene6 = 120;
+let timerInterval;
+
+function updateTimerDisplay() {
+    const formatTime = (seconds) => {
+        let mins = Math.floor(seconds / 60);
+        let secs = seconds % 60;
+        mins = mins < 10 ? '0' + mins : mins;
+        secs = secs < 10 ? '0' + secs : secs;
+        return `${mins}:${secs}`;
+    };
+    document.getElementById('timer-scene3').innerText = formatTime(timerScene3);
+    document.getElementById('timer-scene6').innerText = formatTime(timerScene6);
+}
+
+socket.on("startTimer", () => {
+    if (timerInterval) clearInterval(timerInterval);
+    timerInterval = setInterval(() => {
+        timerScene3--;
+        timerScene6--;
+        updateTimerDisplay();
+        if (timerScene3 < 0 || timerScene6 < 0) {
+            clearInterval(timerInterval);
+        }
+    }, 1000);
+});
+
+socket.on("pause", () => {
+    if (timerInterval) clearInterval(timerInterval);
+});
+
+socket.on("play", () => {
+    if (timerInterval) clearInterval(timerInterval);
+    timerInterval = setInterval(() => {
+        timerScene3--;
+        timerScene6--;
+        updateTimerDisplay();
+        if (timerScene3 < 0 || timerScene6 < 0) {
+            clearInterval(timerInterval);
+        }
+    }, 1000);
+});
+
+socket.on("reset", () => {
+    if (timerInterval) clearInterval(timerInterval);
+    timerScene3 = 60;
+    timerScene6 = 120;
+    updateTimerDisplay();
+});
+
+socket.on("sceneUpdate", (data) => {
+    activeSceneFile = data.index1;
+
+    document.getElementById("scenar-box").classList.remove("active-block");
+    document.getElementById("block-text").classList.remove("active-block");
+    document.getElementById("block-abc").classList.remove("active-block");
+    document.getElementById("finale-toggle-container").style.display = "none";
+
+    if (activeSceneFile === "videolov.html" || activeSceneFile === "pozadim.html") {
+        document.getElementById("scenar-box").classList.add("active-block");
+    } else if (activeSceneFile === "kameracastka.html") {
+        document.getElementById("block-text").classList.add("active-block");
+        document.getElementById("text-block-title").innerText = "1. KOLO - ŠTVANICE";
+        renderVsechnyKarty();
+    } else if (activeSceneFile === "otazky.html") {
+        document.getElementById("block-abc").classList.add("active-block");
+        refreshABC();
+    } else if (activeSceneFile === "finale.html") {
+        document.getElementById("block-text").classList.add("active-block");
+        document.getElementById("finale-toggle-container").style.display = "flex";
+        document.getElementById("text-block-title").innerText = "FINÁLE";
+        renderVsechnyKarty();
+    } else {
+        // Default to scenar
+        document.getElementById("scenar-box").classList.add("active-block");
+    }
+});
+
+function changeCounter(val) {
+    socket.emit("updateCounter", val);
+}
+
+function resetCounter() {
+    if(confirm("Opravdu vynulovat počítadlo?")) {
+        socket.emit("resetCounter");
+    }
+}
+
+let questionsABC = [];
+let localRychleOtazky = [];
+let localRychleIndex = 0;
+let finaleOtazky = [];
+let finaleIndex = 0;
+let currentABCIndex = 0;
+let lovecOtazky = [];
+let currentFinaleSet = "hraci";
+let lovecIndex = 0;
+let activeSceneFile = ""; // track current scene for petvterin logic
+
+// second-round state for ABC questions
+let currentABCCorrect = -1;          // index (0=A,1=B,2=C)
+let revealABCOnPetvterin = false;    // flag to show after petvterin
+
+function refreshABC() {
+    if (!questionsABC || questionsABC.length === 0) {
+        document.getElementById("display-abc-q").innerText = "Čekám na načtení otázek...";
+        return;
+    }
+    const q = questionsABC[currentABCIndex];
+    if (!q) return;
+
+    document.getElementById("display-abc-q").innerText = q.question;
+    const options = ["opt-A", "opt-B", "opt-C"];
+
+    // reset state
+    currentABCCorrect = -1;
+    revealABCOnPetvterin = false;
+
+    q.answers.forEach((ans, index) => {
+        const el = document.getElementById(options[index]);
+        if (el) {
+            el.innerText = `${["A", "B", "C"][index]}: ${ans.text}`;
+            el.classList.remove("correct-hint");
+            if (ans.isCorrect === true) {
+                currentABCCorrect = index;
+            }
+        }
+    });
+}
+
+// helper to reveal correct option after delay
+function revealCorrectABC() {
+    if (currentABCCorrect >= 0) {
+        const options = ["opt-A", "opt-B", "opt-C"];
+        const el = document.getElementById(options[currentABCCorrect]);
+        if (el) el.classList.add("correct-hint");
+    }
+}
+
+// respond to controller "petvterin" event
+socket.on("petvterin", () => {
+    if (activeSceneFile === "otazky.html") {
+        setTimeout(revealCorrectABC, 5500);
+    }
+});
+
+function setFinaleSet(set) {
+    currentFinaleSet = set;
+    
+    // Vizuální zpětná vazba tlačítek
+    document.getElementById("btn-set-hraci").classList.toggle("active", set === 'hraci');
+    document.getElementById("btn-set-lovec").classList.toggle("active", set === 'lovec');
+    
+    console.log("Přepínám sadu otázek na:", set);
+    renderVsechnyKarty();
+}
+
+function resetFinaleOtazky() {
+    console.log("🔄 Resetuji finálové otázky...");
+    socket.emit("resetujFinale");
+    finaleIndex = 0;
+    lovecIndex = 0;
+    renderVsechnyKarty();
+}
+
+function renderVsechnyKarty() {
+    const stack = document.getElementById("cards-stack");
+    if (!stack) return;
+    stack.innerHTML = "";
+
+    let data = [];
+    let index = 0;
+    let socketEvent = "";
+
+    if (document.getElementById("block-text").classList.contains("active-block") && document.getElementById("text-block-title").innerText === "FINÁLE") {
+        if (currentFinaleSet === "hraci") {
+            data = finaleOtazky;
+            index = finaleIndex;
+            socketEvent = "posunIndexFinale";
+            console.log("🎬 renderVsechnyKarty HRÁČI:", { pocet: data.length, index });
+        } else {
+            data = lovecOtazky;
+            index = lovecIndex;
+            socketEvent = "posunIndexLovec";
+            console.log("🎬 renderVsechnyKarty LOVEC:", { pocet: data.length, index, obsah: data });
+        }
+    } else {
+        data = localRychleOtazky;
+        index = localRychleIndex;
+        socketEvent = "posunIndexRychle";
+        console.log("🎬 renderVsechnyKarty RYCHLÉ:", { pocet: data.length, index });
+    }
+
+    if (!data || data.length === 0) {
+        stack.innerHTML = `<div style='color: #666; padding: 20px;'>Žádné otázky nejsou načteny.</div>`;
+        console.warn("⚠️ Žádné otázky pro vykreslení!");
+        return;
+    }
+
+    data.forEach((item, i) => {
+        if (i < index) return; 
+
+        const card = document.createElement("div");
+        card.className = "q-card";
+        
+        if (document.getElementById("text-block-title").innerText === "FINÁLE") {
+            card.style.borderLeftColor = (currentFinaleSet === "lovec") ? "#3498db" : "#e74c3c"; 
+        }
+
+        card.innerHTML = `<div class="question">${item[0]}</div><div class="answer">${item[1]}</div>`;
+        
+        card.onclick = () => {
+            card.classList.add("dismissed");
+            socket.emit(socketEvent);
+            setTimeout(() => { if (card.parentNode === stack) card.remove(); }, 400);
+        };
+        stack.appendChild(card);
+    });
+}
+</script>
+
+</body>
+</html>
