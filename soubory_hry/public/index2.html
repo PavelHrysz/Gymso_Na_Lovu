@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nakloněná obrazovka</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+                overflow: hidden;
+        }
+
+        /* Schování scrollbarů */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        * {
+            scrollbar-width: none;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <iframe id="sceneFrame" src=""></iframe>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+        const iframe = document.getElementById("sceneFrame");
+        let currentSrc = "";
+
+        socket.on("sceneUpdate", (mapping) => {
+            if (mapping && mapping.index2) {
+                const newSrc = mapping.index2;
+                if (newSrc !== currentSrc) {
+                    iframe.src = newSrc;
+                    currentSrc = newSrc;
+                    console.log("Index 2 načítá:", newSrc);
+                } else {
+                    console.log("Index 2: Scéna se nenačítá, protože je stejná jako aktuální.");
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finále</title>
+    <style>
+    body {
+        margin: 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-end;
+        align-items: stretch;
+        height: 100vh;
+        background: radial-gradient(circle, #1a1a1a 0%, #000000 100%);
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        /* Schování scrollbarů */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        * {
+            scrollbar-width: none;
+    }
+
+    .box {
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        margin-top: 5vh;
+        border-radius: 12px;
+        transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+        font-size: 3.5em;
+        font-weight: bold;
+        position: absolute;
+        box-sizing: border-box;
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        text-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+
+    /* Modrý stav - Hráč */
+    .blue {
+        background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        box-shadow: 0 0 30px rgba(59, 130, 246, 0.4), inset 0 0 20px rgba(255,255,255,0.2);
+    }
+
+    /* Červený stav - Lovec */
+    .red {
+        background: linear-gradient(135deg, #7f1d1d 0%, #ef4444 100%);
+        box-shadow: 0 0 40px rgba(239, 68, 68, 0.6), inset 0 0 20px rgba(255,255,255,0.3);
+        transform: scale(1.02); /* Lovec mírně vystoupí do popředí */
+        z-index: 10;
+    }
+
+    .box::after {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 50%);
+        border-radius: 12px;
+        pointer-events: none;
+    }
+</style>
+</head>
+<body>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+        let boxCount = 0;
+        let changeIndex = 0;
+
+        function addBox() {
+            boxCount++;
+
+            const newBox = document.createElement('div');
+            newBox.classList.add('box', 'blue');
+            newBox.innerText = boxCount;
+
+            document.body.appendChild(newBox);
+
+            recalculateBoxWidths();
+        }
+
+        function changeColor() {
+            const boxes = document.querySelectorAll('.box');
+            if (changeIndex < boxes.length) {
+                boxes[changeIndex].classList.replace('blue', 'red');
+                changeIndex++;
+            }
+        }
+
+        function removeBox() {
+            const boxes = document.querySelectorAll('.box');
+            if (boxes.length > 0) {
+                const lastBox = boxes[boxes.length - 1];
+                document.body.removeChild(lastBox);
+                boxCount--;
+                recalculateBoxWidths();
+            }
+        }
+
+        function changeColorBack() {
+            if (changeIndex > 0) {
+                changeIndex--;
+                const boxes = document.querySelectorAll('.box');
+                if (boxes[changeIndex]) {
+                    boxes[changeIndex].classList.replace('red', 'blue');
+                }
+            }
+        }
+
+        function recalculateBoxWidths() {
+            const boxes = document.querySelectorAll('.box');
+            boxes.forEach((box, index) => {
+                box.style.width = (100 / boxes.length) + 'vw';
+                box.style.left = (index * (100 / boxes.length)) + 'vw';
+            });
+        }
+
+        addBox();
+
+
+        socket.on("finaleCommand", (data) => {
+            if (data.command === "addBox") {
+                addBox();
+            } else if (data.command === "changeColor") {
+                changeColor();
+            } else if (data.command === "removeBox") {
+                removeBox();
+            } else if (data.command === "changeColorBack") {
+                changeColorBack();
+            }
+        });
+
+socket.on("connect", () => {
+    socket.emit("resetFinaleState");
+});
+
+        socket.on("finaleCommand", (data) => {
+            console.log("Finale dostalo příkaz:", data.command);
+        });
+    </script>
+</body>
+</html>

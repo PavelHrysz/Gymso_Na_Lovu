@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>MODERÁTOR</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <style>
+    body { background: #111; color: white; font-family: 'Segoe UI', sans-serif; margin: 0; display: flex; flex-direction: column; height: 100vh; overflow: hidden; }
+    .header { background: #222; padding: 15px; display: flex; justify-content: space-between; border-bottom: 2px solid #d35400; }
+    .scene-indicator { color: #d35400; font-weight: bold; text-transform: uppercase; }
+    .workspace { flex: 1; display: flex; padding: 20px; gap: 20px; overflow: hidden; }
+
+    .content-block { flex: 2; background: #1a1a1a; border-radius: 10px; padding: 25px; display: none; border: 1px solid #333; overflow-y: auto; }
+    .active-block { display: block; }
+
+    #cards-stack { display: flex; flex-direction: column; gap: 12px; padding: 10px; }
+    
+    .q-card {
+    background: #2c3e50;
+    border-left: 8px solid #f1c40f;
+    padding: 18px 25px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    cursor: pointer;
+    font-size: 0.9em;
+    
+    transition: 
+        transform 0.3s ease-in, 
+        opacity 0.3s ease, 
+        max-height 0.4s ease, 
+        margin-top 0.4s ease, 
+        padding 0.4s ease;
+    
+    overflow: hidden;
+    max-height: 500px;
+    position: relative;
+}
+
+.q-card.dismissed {
+    transform: translateX(120%) rotate(10deg);
+    opacity: 0;
+    max-height: 0 !important;
+    margin-top: -12px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    pointer-events: none;
+}
+
+    .q-card .question { 
+        font-size: 1.5em; color: #fff; flex: 2; 
+        word-wrap: break-word; overflow-wrap: break-word; word-break: break-word;
+        hyphens: auto;
+    }
+    .q-card .answer { 
+        font-size: 1.6em; font-weight: bold; color: #2ecc71; 
+        background: rgba(0,0,0,0.2); padding: 8px 20px; 
+        border-radius: 5px; min-width: 140px; text-align: center; border-left: 1px solid #444;
+        word-wrap: break-word; overflow-wrap: break-word; word-break: break-word;
+        hyphens: auto;
+    }
+
+    .option { 
+        background: #222; padding: 15px; margin-top: 10px; border-radius: 5px; 
+        border-left: 5px solid #444; font-size: 1.5em;
+        word-wrap: break-word; overflow-wrap: break-word; word-break: break-word;
+        hyphens: auto;
+    }
+    .correct-hint { border-left-color: #27ae60; background: #1e3d2b; }
+
+    .side-panel { flex: 1; display: flex; flex-direction: column; gap: 20px; max-width: 280px; }
+    .players-list { background: #222; padding: 15px; border-radius: 10px; display: none; }
+    .stul { padding: 10px; margin: 5px 0; background: #333; border-radius: 5px; text-align: center; }
+    .stul.active { background: #d35400; }
+
+    .interkom-panel {
+    background: #000;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 10px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+#interkom-status {
+    font-size: 50px;
+    margin: 5px;
+}
+#interkom-text {
+    font-size: 1.2em;
+    color: #f1c40f;
+    text-align: center;
+    font-weight: bold;
+}
+
+.casovac-panel {
+    background: #1a1a1a;
+    border: 2px solid #e74c3c;
+    border-radius: 8px;
+    padding: 15px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.casovac-panel.active {
+    display: flex;
+}
+
+#casovac-display {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #f1c40f;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 0.05em;
+    line-height: 1;
+}
+
+/* additional panel for scenario text when main view is hidden */
+.side-scenar-panel {
+    background: #222;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+    max-height: 250px;
+    overflow-y: auto;
+    color: #ddd;
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <div>MODERÁTOR | <span id="clock">00:00:00</span></div>
+    <div class="scene-indicator" id="current-scene-name">SCÉNA: NAČÍTÁNÍ...</div>
+</div>
+
+<div id="block-scenar-uvod" class="content-block">
+    <h3 style="color: #666;">SCÉNÁŘ / ÚVOD</h3>
+    <div id="text-uvod-obsah" style="white-space: pre-wrap; line-height: 1.6; font-size: 1.2em; word-wrap: break-word; overflow-wrap: break-word; word-break: break-word; hyphens: auto;">Načítání scénáře...</div>
+</div>
+
+<div class="workspace">
+    <div id="block-text" class="content-block">
+        <h3 style="color: #666; display: flex; justify-content: space-between; align-items: center;">
+    <span id="text-block-title">RYCHLÉ OTÁZKY</span>
+    
+    <div id="finale-toggle-container" style="display: none; gap: 10px;">
+        <button id="btn-set-hraci" onclick="setFinaleSet('hraci')" style="background: #e74c3c; color: white; border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer; font-weight: bold;">HRÁČI</button>
+        <button id="btn-set-lovec" onclick="setFinaleSet('lovec')" style="background: #444; color: white; border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer; font-weight: bold;">LOVEC</button>
+    </div>
+
+    <button onclick="resetFinaleOtazky()" style="background: #e74c3c; color: white; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer; font-size: 0.6em;">RESETUJ FINÁLE</button>
+</h3>
+        <div id="cards-stack"></div>
+    </div>
+
+    <div id="block-abc" class="content-block">
+        <h3 style="color: #666;">OTÁZKA S VOLBOU (2. KOLO)</h3>
+        <div id="display-abc-q" style="color: #f1c40f; margin-bottom: 20px; font-size: 1.8em; word-wrap: break-word; overflow-wrap: break-word; word-break: break-word; hyphens: auto;">---</div>
+        <div id="opt-A" class="option">A: ---</div>
+        <div id="opt-B" class="option">B: ---</div>
+        <div id="opt-C" class="option">C: ---</div>
+    </div>
+
+    <div class="side-panel">
+        <div id="players-panel" class="players-list">
+            <h4 style="margin: 0 0 10px 0;">PŘIHLÁŠENÍ HRÁČI (FINÁLE)</h4>
+            <div id="mod-s1" class="stul">STŮL 1</div>
+            <div id="mod-s2" class="stul">STŮL 2</div>
+            <div id="mod-s3" class="stul">STŮL 3</div>
+            <div id="mod-s4" class="stul">STŮL 4</div>
+            <div id="mod-s5" class="stul">STŮL 5</div>
+        </div>
+        <div class="interkom-panel">
+    <div style="font-size: 0.7em; color: #666; width: 100%;">POKYNY ZE ŠTÁBU:</div>
+    <div id="interkom-status">---</div>
+    <div id="interkom-text">Žádné nové zprávy</div>
+    <div style="font-size: 0.8em; color: #666;">STAV: <span id="mod-counter" style="color: #f1c40f; font-weight: bold;">0</span></div>
+</div>
+
+        <!-- side panel for scenario when main view is hidden -->
+        <div id="side-scenar-panel" class="side-scenar-panel" style="display:none;">
+            <h4 style="margin:0 0 10px 0; color:#666; font-size:0.9em;">SCÉNÁŘ / ÚVOD</h4>
+            <div id="side-scenar-obsah" style="white-space: pre-wrap; line-height:1.4; font-size:1em; word-wrap:break-word; overflow-wrap:break-word; word-break:break-word; hyphens:auto; color:#fff;">Načítání scénáře...</div>
+        </div>
+
+        <div id="casovac-panel" class="casovac-panel">
+            <h4 style="margin: 0 0 15px 0; color: #e74c3c; font-size: 0.9em;">ČAS ZBÝVÁ</h4>
+            <div id="casovac-display">02:00</div>
+        </div>
+</div>
+
+<script>
+    const socket = io();
+let questionsABC = [];
+let localRychleOtazky = [];
+let localRychleIndex = 0;
+let finaleOtazky = [];
+let finaleIndex = 0;
+let activeSceneFile = "";
+let currentABCIndex = 0;
+
+let lovecOtazky = [];
+let currentFinaleSet = "hraci";
+
+// second-round state
+let currentABCCorrect = -1;
+
+// helper to mirror scenario text into the side panel
+function updateScenarPanel(text) {
+    const el = document.getElementById("side-scenar-obsah");
+    if (el) el.innerText = text;
+}
+
+
+let lovecIndex = 0;
+
+socket.on("connect", () => {
+    console.log("Připojeno k serveru...");
+    socket.emit("nactiLokalniOtazky");
+    socket.emit("dejMiRychleOtazky");
+    socket.emit("dejMiVsechnyOtazky"); 
+    socket.emit("dejMiAktualniIndex");
+    socket.emit("dejMiFinaleOtazky");
+    socket.emit("dejMiLovecOtazky");
+});
+
+socket.on("lovecOtazkyUpdate", (data) => {
+    console.log("📥 lovecOtazkyUpdate přijato:", data);
+    console.log("   - Počet otázek:", data.otazky?.length || 0);
+    console.log("   - Index:", data.index || 0);
+    console.log("   - Obsah:", data.otazky);
+    
+    lovecOtazky = data.otazky || [];
+    lovecIndex = data.index || 0;
+    renderVsechnyKarty();
+});
+
+socket.on("lovecIndexUpdate", (newIndex) => {
+    lovecIndex = newIndex;
+    renderVsechnyKarty();
+});
+
+socket.on("profileUpdate", (profil) => {
+    console.log("📋 Aktuální profil:", profil);
+});
+
+socket.on("otazkyNacteny", (data) => { questionsABC = data; refreshABC(); });
+socket.on("posilamVsechnyOtazky", (data) => { questionsABC = data; refreshABC(); });
+socket.on("posilamAktualniIndex", (index) => { currentABCIndex = index; refreshABC(); });
+socket.on("dalsiOtazka", (index) => { currentABCIndex = index; refreshABC(); });
+
+socket.on("counterUpdate", (value) => {
+    const el = document.getElementById("mod-counter");
+    if (el) el.innerText = value;
+});
+
+socket.on("scenarUvodUpdate", (text) => {
+    document.getElementById("text-uvod-obsah").innerText = text;
+    updateScenarPanel(text);
+});
+
+socket.on("rychleOtazkyUpdate", (data) => {
+    localRychleOtazky = data.otazky || [];
+    localRychleIndex = data.index || 0;
+    renderVsechnyKarty();
+});
+socket.on("rychleIndexUpdate", (newIndex) => {
+    localRychleIndex = newIndex;
+    renderVsechnyKarty();
+});
+
+socket.on("finaleOtazkyUpdate", (data) => {
+    console.log("Finále otázky přijaty");
+    finaleOtazky = data.otazky || [];
+    finaleIndex = data.index || 0;
+    renderVsechnyKarty();
+});
+
+socket.on("finaleIndexUpdate", (newIndex) => {
+    finaleIndex = newIndex;
+    renderVsechnyKarty();
+});
+
+socket.on("counterUpdate", (value) => {
+    const el = document.getElementById("mod-counter");
+    if (el) {
+        el.innerText = value.toLocaleString('cs-CZ');
+    }
+});
+
+let interkomTimeout;
+
+socket.on("ukazPalecModeratorovi", (data) => {
+    const statusEl = document.getElementById("interkom-status");
+    const textEl = document.getElementById("interkom-text");
+
+    clearTimeout(interkomTimeout);
+
+    if (data.typ === 'up') {
+        statusEl.innerText = "👍";
+    } else if (data.typ === 'down') {
+        statusEl.innerText = "👎";
+    } else if (data.typ === 'text') {
+        textEl.innerText = data.zprava;
+
+        textEl.style.color = "#ff4444";
+        setTimeout(() => { textEl.style.color = "#f1c40f"; }, 1000);
+    } else if (data.typ === 'clear') {
+        statusEl.innerText = "---";
+        textEl.innerText = "Žádné nové zprávy";
+        return;
+    }
+
+    interkomTimeout = setTimeout(() => {
+        statusEl.innerText = "---";
+        textEl.innerText = "Žádné nové zprávy";
+    }, 3000);
+});
+
+socket.on("sceneUpdate", (data) => {
+    activeSceneFile = data.index1;
+
+    document.getElementById("finale-toggle-container").style.display = "none";
+    document.getElementById("casovac-panel").classList.remove("active");
+    
+    document.getElementById("block-text").classList.remove("active-block");
+    document.getElementById("block-abc").classList.remove("active-block");
+    document.getElementById("block-scenar-uvod").classList.remove("active-block");
+    document.getElementById("players-panel").style.display = "none";
+
+    if (activeSceneFile === "videolov.html" || activeSceneFile === "pozadim.html") {
+        document.getElementById("block-scenar-uvod").classList.add("active-block");
+        document.getElementById("current-scene-name").innerText = "SCÉNA: ÚVOD / PŘEDSTAVENÍ";
+    } 
+
+    else if (activeSceneFile === "kameracastka.html") {
+        document.getElementById("block-text").classList.add("active-block");
+        document.getElementById("text-block-title").innerText = "1. KOLO - ŠTVANICE";
+        document.getElementById("current-scene-name").innerText = "SCÉNA: 1. KOLO";
+        document.getElementById("casovac-panel").classList.add("active");
+        resetCasovac(60);
+        renderVsechnyKarty();
+    }
+
+    if (activeSceneFile === "otazky.html") {
+        document.getElementById("block-abc").classList.add("active-block");
+        document.getElementById("current-scene-name").innerText = "SCÉNA: 2. KOLO (VOLBY)";
+        refreshABC();
+    } else if (activeSceneFile === "finale.html") {
+        document.getElementById("block-text").classList.add("active-block");
+        document.getElementById("players-panel").style.display = "block";
+        document.getElementById("finale-toggle-container").style.display = "flex";
+        document.getElementById("text-block-title").innerText = "FINÁLE";
+        document.getElementById("current-scene-name").innerText = "SCÉNA: FINÁLE";
+        document.getElementById("casovac-panel").classList.add("active");
+        resetCasovac(120);
+        renderVsechnyKarty();
+    }
+
+    // if the main scenario area isn't visible, show the text in the side panel
+    const sideScenar = document.getElementById("side-scenar-panel");
+    if (sideScenar) {
+        if (!document.getElementById("block-scenar-uvod").classList.contains("active-block")) {
+            sideScenar.style.display = "block";
+        } else {
+            sideScenar.style.display = "none";
+        }
+    }
+});
+
+// --- VYKRESLOVÁNÍ ---
+
+function refreshABC() {
+    if (!questionsABC || questionsABC.length === 0) {
+        document.getElementById("display-abc-q").innerText = "Čekám na načtení otázek...";
+        return;
+    }
+    const q = questionsABC[currentABCIndex];
+    if (!q) return;
+
+    document.getElementById("display-abc-q").innerText = q.question;
+    const options = ["opt-A", "opt-B", "opt-C"];
+
+    currentABCCorrect = -1;
+
+    q.answers.forEach((ans, index) => {
+        const el = document.getElementById(options[index]);
+        if (el) {
+            el.innerText = `${["A", "B", "C"][index]}: ${ans.text}`;
+            el.classList.remove("correct-hint");
+            if (ans.isCorrect) currentABCCorrect = index;
+        }
+    });
+}
+
+function setFinaleSet(set) {
+    currentFinaleSet = set;
+    
+    // Vizuální zpětná vazba tlačítek
+    document.getElementById("btn-set-hraci").style.background = (set === 'hraci') ? "#e74c3c" : "#444";
+    document.getElementById("btn-set-lovec").style.background = (set === 'lovec') ? "#e74c3c" : "#444";
+    
+    console.log("Přepínám sadu otázek na:", set);
+    renderVsechnyKarty();
+}
+
+function resetFinaleOtazky() {
+    console.log("🔄 Resetuji finálové otázky...");
+    socket.emit("resetujFinale");
+    finaleIndex = 0;
+    lovecIndex = 0;
+    renderVsechnyKarty();
+}
+
+function renderVsechnyKarty() {
+    const stack = document.getElementById("cards-stack");
+    if (!stack) return;
+    stack.innerHTML = "";
+
+    let data = [];
+    let index = 0;
+    let socketEvent = "";
+
+    if (activeSceneFile === "finale.html") {
+        if (currentFinaleSet === "hraci") {
+            data = finaleOtazky;
+            index = finaleIndex;
+            socketEvent = "posunIndexFinale";
+            console.log("🎬 renderVsechnyKarty HRÁČI:", { pocet: data.length, index });
+        } else {
+            data = lovecOtazky;
+            index = lovecIndex;
+            socketEvent = "posunIndexLovec";
+            console.log("🎬 renderVsechnyKarty LOVEC:", { pocet: data.length, index, obsah: data });
+        }
+    } else {
+        data = localRychleOtazky;
+        index = localRychleIndex;
+        socketEvent = "posunIndexRychle";
+        console.log("🎬 renderVsechnyKarty RYCHLÉ:", { pocet: data.length, index });
+    }
+
+    if (!data || data.length === 0) {
+        stack.innerHTML = `<div style='color: #666; padding: 20px;'>Žádné otázky pro ${currentFinaleSet} nejsou načteny.</div>`;
+        console.warn("⚠️ Žádné otázky pro vykreslení!");
+        return;
+    }
+
+    data.forEach((item, i) => {
+        if (i < index) return; 
+
+        const card = document.createElement("div");
+        card.className = "q-card";
+        
+        if (activeSceneFile === "finale.html") {
+            card.style.borderLeftColor = (currentFinaleSet === "lovec") ? "#3498db" : "#e74c3c"; 
+        }
+
+        card.innerHTML = `<div class="question">${item[0]}</div><div class="answer">${item[1]}</div>`;
+        
+        card.onclick = () => {
+            card.classList.add("dismissed");
+            socket.emit(socketEvent);
+            setTimeout(() => { if (card.parentNode === stack) card.remove(); }, 400);
+        };
+        stack.appendChild(card);
+    });
+}
+// --- POMOCNÉ FUNKCE ---
+setInterval(() => document.getElementById('clock').innerText = new Date().toLocaleTimeString(), 1000);
+
+// reveal helper for moderator
+function revealCorrectABC() {
+    if (currentABCCorrect >= 0) {
+        const options = ["opt-A", "opt-B", "opt-C"];
+        const el = document.getElementById(options[currentABCCorrect]);
+        if (el) el.classList.add("correct-hint");
+    }
+}
+
+// --- ČASOVAČ (scéna 3) ---
+let casovacTimeLeft = 120;
+let casovacIsRunning = false;
+let casovacInterval;
+const casovacDisplay = document.getElementById("casovac-display");
+
+function updateCasovacDisplay() {
+    let minutes = Math.floor(casovacTimeLeft / 60);
+    let seconds = casovacTimeLeft % 60;
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+    casovacDisplay.textContent = `${minutes}:${seconds}`;
+}
+
+function startCasovac() {
+    if (!casovacIsRunning) {
+        casovacIsRunning = true;
+        casovacInterval = setInterval(() => {
+            casovacTimeLeft--;
+            updateCasovacDisplay();
+            if (casovacTimeLeft < 1) {
+                clearInterval(casovacInterval);
+                casovacIsRunning = false;
+            }
+        }, 1000);
+    }
+}
+
+function pauseCasovac() {
+    clearInterval(casovacInterval);
+    casovacIsRunning = false;
+}
+
+function resetCasovac(duration = 120) {
+    clearInterval(casovacInterval);
+    casovacIsRunning = false;
+    casovacTimeLeft = duration;
+    updateCasovacDisplay();
+}
+
+socket.on("startTimer", () => {
+    updateCasovacDisplay();
+    startCasovac();
+});
+
+socket.on("petvterin", () => {
+    if (activeSceneFile === "otazky.html") {
+        setTimeout(revealCorrectABC, 5500);
+    }
+});
+socket.on("pause", () => {
+    pauseCasovac();
+});
+
+socket.on("play", () => {
+    startCasovac();
+});
+
+socket.on("reset", () => {
+    resetCasovac();
+});
+
+window.addEventListener("keydown", (e) => {
+    if (e.code === "Space") {
+        if (activeSceneFile === "finale.html" || activeSceneFile === "kameracastka.html") {
+            e.preventDefault();
+            const firstCard = document.querySelector(".q-card:not(.dismissed)");
+            if (firstCard) firstCard.click();
+        }
+    }
+});
+
+[1,2,3,4,5].forEach(id => {
+    socket.on(`stisknutoHrac${id}`, () => {
+        const el = document.getElementById(`mod-s${id}`);
+        if (el) {
+            el.classList.add('active');
+            setTimeout(() => el.classList.remove('active'), 4000);
+        }
+    });
+});
+</script>
+</body>
+</html>
