@@ -1,0 +1,1823 @@
+[
+  {
+    "question": "Kolikrát obešli tři čuníci zeměkouli tam a zpět ve slavné písničce Jaromíra Nohavici?",
+    "answers": [
+      {
+        "text": "dvakrát",
+        "isCorrect": false
+      },
+      {
+        "text": "pětkrát",
+        "isCorrect": false
+      },
+      {
+        "text": "třikrát",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Kolik hvězd je na vlajce USA?",
+    "answers": [
+      {
+        "text": "48",
+        "isCorrect": false
+      },
+      {
+        "text": "51",
+        "isCorrect": false
+      },
+      {
+        "text": "50",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "\"Can't Stop the Feeling\" od Justina Timberlakea je součástí soundtracku ke kterému filmu?",
+    "answers": [
+      {
+        "text": "Trollové",
+        "isCorrect": true
+      },
+      {
+        "text": "Sing",
+        "isCorrect": false
+      },
+      {
+        "text": "Mimoni",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jaká klávesová zkratka se používá pro psaní tučného písma?",
+    "answers": [
+      {
+        "text": "Ctrl+B",
+        "isCorrect": true
+      },
+      {
+        "text": "Ctrl+V",
+        "isCorrect": false
+      },
+      {
+        "text": "Ctrl+I",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Co je to epiteton?",
+    "answers": [
+      {
+        "text": "omamná látka",
+        "isCorrect": false
+      },
+      {
+        "text": "omáčka na steak",
+        "isCorrect": false
+      },
+      {
+        "text": "básnický přívlastek",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Ze kterého státu pocházel Pablo Picasso?",
+    "answers": [
+      {
+        "text": "ze Španělska",
+        "isCorrect": true
+      },
+      {
+        "text": "z Itálie",
+        "isCorrect": false
+      },
+      {
+        "text": "z Portugalska",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Která část lidského oka zachycuje světlo?",
+    "answers": [
+      {
+        "text": "sítnice",
+        "isCorrect": true
+      },
+      {
+        "text": "zornice",
+        "isCorrect": false
+      },
+      {
+        "text": "čočka",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který plyn je nejrozšířenější v atmosféře Země?",
+    "answers": [
+      {
+        "text": "kyslík",
+        "isCorrect": false
+      },
+      {
+        "text": "dusík ",
+        "isCorrect": true
+      },
+      {
+        "text": "oxid uhličitý",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Ve kterém roce padla Západořímská říše?",
+    "answers": [
+      {
+        "text": "476 n. l.",
+        "isCorrect": true
+      },
+      {
+        "text": "430 n. l.",
+        "isCorrect": false
+      },
+      {
+        "text": "470 n. l. ",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jak se nazývá jednotka elektrického odporu?",
+    "answers": [
+      {
+        "text": "volt",
+        "isCorrect": false
+      },
+      {
+        "text": "ampér",
+        "isCorrect": false
+      },
+      {
+        "text": "ohm",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Která řeka je nejdelší v Evropě?",
+    "answers": [
+      {
+        "text": "Labe",
+        "isCorrect": false
+      },
+      {
+        "text": "Dunaj",
+        "isCorrect": false
+      },
+      {
+        "text": "Volha",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Co znamená zkratka MPSV?",
+    "answers": [
+      {
+        "text": "akademický titul",
+        "isCorrect": false
+      },
+      {
+        "text": "Ministerstvo práce a sociálních věcí",
+        "isCorrect": true
+      },
+      {
+        "text": "označení kategorie os. vozidel",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jaká je původní barva Eiffelovy věže?",
+    "answers": [
+      {
+        "text": "červená",
+        "isCorrect": true
+      },
+      {
+        "text": "stříbrná",
+        "isCorrect": false
+      },
+      {
+        "text": "bronzová",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který kov je při pokojové teplotě kapalný?",
+    "answers": [
+      {
+        "text": "zlato",
+        "isCorrect": false
+      },
+      {
+        "text": "rtuť",
+        "isCorrect": true
+      },
+      {
+        "text": "měď",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jak se jmenuje proces, při kterém se hvězda zhroutí sama do sebe a vytvoří černou díru?",
+    "answers": [
+      {
+        "text": "gravitační kolaps",
+        "isCorrect": true
+      },
+      {
+        "text": "fúze",
+        "isCorrect": false
+      },
+      {
+        "text": "supernova",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jak se jmenuje nejstarší dochovaný psaný zákoník?",
+    "answers": [
+      {
+        "text": "Justiniánský kodex",
+        "isCorrect": false
+      },
+      {
+        "text": "Chammurappiho zákoník",
+        "isCorrect": true
+      },
+      {
+        "text": "Zákoník dvanácti desek",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který kontinent nemá žádnou aktivní sopku?",
+    "answers": [
+      {
+        "text": "Austrálie",
+        "isCorrect": true
+      },
+      {
+        "text": "Jižní Amerika",
+        "isCorrect": false
+      },
+      {
+        "text": "Evropa",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který stát má nejvíce časových pásem?",
+    "answers": [
+      {
+        "text": "Španělsko",
+        "isCorrect": false
+      },
+      {
+        "text": "Francie",
+        "isCorrect": true
+      },
+      {
+        "text": "Čína",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Co je to řezané pivo?",
+    "answers": [
+      {
+        "text": "pivo, kterému seřízneme pěnu nožem",
+        "isCorrect": false
+      },
+      {
+        "text": "spojení světlého a černého piva",
+        "isCorrect": true
+      },
+      {
+        "text": "pivo s džusem",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Která řeka protéká nejvíce státy světa?",
+    "answers": [
+      {
+        "text": "Dunaj",
+        "isCorrect": true
+      },
+      {
+        "text": "Vltava",
+        "isCorrect": false
+      },
+      {
+        "text": "Nil",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který minerál je nejtvrdší na Mohsově stupnici tvrdosti?",
+    "answers": [
+      {
+        "text": "mastek",
+        "isCorrect": false
+      },
+      {
+        "text": "křemen",
+        "isCorrect": false
+      },
+      {
+        "text": "diamant",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Co znamená zkratka názvu divadla Semafor?",
+    "answers": [
+      {
+        "text": "SEn MAlých FORem",
+        "isCorrect": false
+      },
+      {
+        "text": "SEdm MAlých FORem",
+        "isCorrect": true
+      },
+      {
+        "text": "SEktor MAlý Ford",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Co je to crescendo v hudbě?",
+    "answers": [
+      {
+        "text": "postupné zesilování zvuku",
+        "isCorrect": true
+      },
+      {
+        "text": "opakování dané části",
+        "isCorrect": false
+      },
+      {
+        "text": "konec skladby",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jakým automobilem jezdil James Bond?",
+    "answers": [
+      {
+        "text": "Ferrari",
+        "isCorrect": false
+      },
+      {
+        "text": "Mercedes Benz",
+        "isCorrect": false
+      },
+      {
+        "text": "Aston Martin",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Který oceán omývá východní pobřeží USA?",
+    "answers": [
+      {
+        "text": "Indický",
+        "isCorrect": false
+      },
+      {
+        "text": "Atlantský",
+        "isCorrect": true
+      },
+      {
+        "text": "Tichý",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Kdo zpívá píseň „drivers license“?",
+    "answers": [
+      {
+        "text": "Sabrina Carpenter",
+        "isCorrect": false
+      },
+      {
+        "text": "Adele",
+        "isCorrect": false
+      },
+      {
+        "text": "Olivia Rodrigo",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Které město bylo dříve známé jako Konstantinopol?",
+    "answers": [
+      {
+        "text": "Istanbul",
+        "isCorrect": true
+      },
+      {
+        "text": "Athény",
+        "isCorrect": false
+      },
+      {
+        "text": "Sofie",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Kdo se stal v ČR absolutním slavíkem pro rok 2023?",
+    "answers": [
+      {
+        "text": "Marek Ztracený",
+        "isCorrect": false
+      },
+      {
+        "text": "Ewa Farna",
+        "isCorrect": true
+      },
+      {
+        "text": "Lucie Bílá",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který plyn má chemickou značku N?",
+    "answers": [
+      {
+        "text": "Dusík",
+        "isCorrect": true
+      },
+      {
+        "text": "Neon",
+        "isCorrect": false
+      },
+      {
+        "text": "Nikl",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Po které dálnici pojedete trasu PRAHA - ROZVADOV?",
+    "answers": [
+      {
+        "text": "D1",
+        "isCorrect": false
+      },
+      {
+        "text": "D5",
+        "isCorrect": true
+      },
+      {
+        "text": "D3",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jak se nazývá naše druhá nejbližší hvězda?",
+    "answers": [
+      {
+        "text": "Měsíc",
+        "isCorrect": false
+      },
+      {
+        "text": "Slunce",
+        "isCorrect": false
+      },
+      {
+        "text": "Alfa Centauri",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Který český král byl nazýván „Otec vlasti“?",
+    "answers": [
+      {
+        "text": " Václav IV.",
+        "isCorrect": false
+      },
+      {
+        "text": " Přemysl Otakar II.",
+        "isCorrect": false
+      },
+      {
+        "text": " Karel IV.",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Jaký je výsledek 15²?",
+    "answers": [
+      {
+        "text": "225",
+        "isCorrect": true
+      },
+      {
+        "text": "255",
+        "isCorrect": false
+      },
+      {
+        "text": "555",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který autor napsal „Farma zvířat“?",
+    "answers": [
+      {
+        "text": " Ernest Hemingway",
+        "isCorrect": false
+      },
+      {
+        "text": "George Orwell",
+        "isCorrect": true
+      },
+      {
+        "text": "Charles Dickens",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Ve kterém roce vznikla samostatná ČSR?",
+    "answers": [
+      {
+        "text": "1918",
+        "isCorrect": true
+      },
+      {
+        "text": "1938",
+        "isCorrect": false
+      },
+      {
+        "text": "1945",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jak se jmenuje největší orgán lidského těla?",
+    "answers": [
+      {
+        "text": "kůže",
+        "isCorrect": true
+      },
+      {
+        "text": "plíce",
+        "isCorrect": false
+      },
+      {
+        "text": "játra",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jaký je obsah čtverce o straně 9 cm?",
+    "answers": [
+      {
+        "text": "36 cm²",
+        "isCorrect": false
+      },
+      {
+        "text": "81 cm²",
+        "isCorrect": true
+      },
+      {
+        "text": "18 cm²",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Hlavní město Kanady je?",
+    "answers": [
+      {
+        "text": "Toronto",
+        "isCorrect": false
+      },
+      {
+        "text": "Ottawa",
+        "isCorrect": true
+      },
+      {
+        "text": "Montreal",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Kolikáté narozeniny letos oslaví český herec Miroslov Donutil?",
+    "answers": [
+      {
+        "text": "75.",
+        "isCorrect": true
+      },
+      {
+        "text": "55.",
+        "isCorrect": false
+      },
+      {
+        "text": "67.",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jak se nazývá nejmenší kost v lidském těle?",
+    "answers": [
+      {
+        "text": "kladívko",
+        "isCorrect": false
+      },
+      {
+        "text": "třmínek",
+        "isCorrect": true
+      },
+      {
+        "text": "kovadlinka",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který český vědec objevil kontaktní čočky?",
+    "answers": [
+      {
+        "text": "Jaroslav Heyrovský",
+        "isCorrect": false
+      },
+      {
+        "text": "Antonín Holý",
+        "isCorrect": false
+      },
+      {
+        "text": "Otto Wichterle",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Jak se jmenuje český básník, který napsal Máj?",
+    "answers": [
+      {
+        "text": "Božena Němcová",
+        "isCorrect": false
+      },
+      {
+        "text": "Karel Hynek Mácha",
+        "isCorrect": true
+      },
+      {
+        "text": "Karel Jaromír Erben",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Co měří barometr?",
+    "answers": [
+      {
+        "text": "teplotu",
+        "isCorrect": false
+      },
+      {
+        "text": "vlhkost",
+        "isCorrect": false
+      },
+      {
+        "text": "tlak vzduchu",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Který stát nemá moře?",
+    "answers": [
+      {
+        "text": "Švýcarsko",
+        "isCorrect": true
+      },
+      {
+        "text": "Albánie",
+        "isCorrect": false
+      },
+      {
+        "text": "Řecko",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Kolik kostí má lidské tělo v dospělosti?",
+    "answers": [
+      {
+        "text": "209",
+        "isCorrect": false
+      },
+      {
+        "text": "206",
+        "isCorrect": true
+      },
+      {
+        "text": "211",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který český skladatel napsal Novosvětskou symfonii?",
+    "answers": [
+      {
+        "text": "Antonín Dvořák",
+        "isCorrect": true
+      },
+      {
+        "text": "Bedřich Smetana",
+        "isCorrect": false
+      },
+      {
+        "text": "Leoš Janáček",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který panovník vládl za husitských válek?",
+    "answers": [
+      {
+        "text": "Rudolf II.",
+        "isCorrect": false
+      },
+      {
+        "text": "Ferdinand I.",
+        "isCorrect": false
+      },
+      {
+        "text": "Zikmund Lucemburský",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Jak se nazývá proces přeměny vody v páru?",
+    "answers": [
+      {
+        "text": "tání",
+        "isCorrect": false
+      },
+      {
+        "text": "kondenzace",
+        "isCorrect": false
+      },
+      {
+        "text": "vypařováni",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Který prvek je základem organických látek?",
+    "answers": [
+      {
+        "text": "Vápník",
+        "isCorrect": false
+      },
+      {
+        "text": "Draslík",
+        "isCorrect": false
+      },
+      {
+        "text": "Uhlík",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Který orgán produkuje inzulin?",
+    "answers": [
+      {
+        "text": "slinivka ",
+        "isCorrect": true
+      },
+      {
+        "text": "játra",
+        "isCorrect": false
+      },
+      {
+        "text": "ledviny",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který český prezident byl ekonom?",
+    "answers": [
+      {
+        "text": "Václav Havel",
+        "isCorrect": false
+      },
+      {
+        "text": "Petr Pavel",
+        "isCorrect": false
+      },
+      {
+        "text": "Václav Klaus",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Jak se nazývá podnebné pásmo kolem rovníku?",
+    "answers": [
+      {
+        "text": "polární",
+        "isCorrect": false
+      },
+      {
+        "text": "tropické",
+        "isCorrect": true
+      },
+      {
+        "text": "mírné",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který stát má nejvíce obyvatel?",
+    "answers": [
+      {
+        "text": "Usa",
+        "isCorrect": false
+      },
+      {
+        "text": "Indie",
+        "isCorrect": true
+      },
+      {
+        "text": "Rusko",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Která planeta je označována jako rudá?",
+    "answers": [
+      {
+        "text": "Mars",
+        "isCorrect": true
+      },
+      {
+        "text": "Venuše",
+        "isCorrect": false
+      },
+      {
+        "text": "Merkur",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Doplňte text známé písně od kapely Coldplay: \"Look at the stars, look how they....\"",
+    "answers": [
+      {
+        "text": "live for us",
+        "isCorrect": false
+      },
+      {
+        "text": "shine for you",
+        "isCorrect": true
+      },
+      {
+        "text": "pray for me",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jak se nazývá hlavní město Austrálie?",
+    "answers": [
+      {
+        "text": "Sydney",
+        "isCorrect": false
+      },
+      {
+        "text": "Canberra",
+        "isCorrect": true
+      },
+      {
+        "text": "Melbourne",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který kov je nejlepší vodič elektřiny?",
+    "answers": [
+      {
+        "text": "železo",
+        "isCorrect": false
+      },
+      {
+        "text": "stříbro",
+        "isCorrect": true
+      },
+      {
+        "text": "hliník",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Které číslo není prvočíslo?",
+    "answers": [
+      {
+        "text": "4",
+        "isCorrect": true
+      },
+      {
+        "text": "2",
+        "isCorrect": false
+      },
+      {
+        "text": "3",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Kdy slavíme Mezinárodní den žen?",
+    "answers": [
+      {
+        "text": "6. března",
+        "isCorrect": false
+      },
+      {
+        "text": "7. března",
+        "isCorrect": false
+      },
+      {
+        "text": "8. března",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Jak se nazývá krevní barvivo?",
+    "answers": [
+      {
+        "text": "adrenalin",
+        "isCorrect": false
+      },
+      {
+        "text": "melanin",
+        "isCorrect": false
+      },
+      {
+        "text": "hemoglobin",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Který stát leží na dvou světadílech?",
+    "answers": [
+      {
+        "text": "Polsko",
+        "isCorrect": false
+      },
+      {
+        "text": "Turecko",
+        "isCorrect": true
+      },
+      {
+        "text": "Francie",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Kolik má rok hodin?",
+    "answers": [
+      {
+        "text": "8760",
+        "isCorrect": true
+      },
+      {
+        "text": "6760",
+        "isCorrect": false
+      },
+      {
+        "text": "7080",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jaký je vzorec pro výpočet hustoty?   ",
+    "answers": [
+      {
+        "text": "V/m",
+        "isCorrect": false
+      },
+      {
+        "text": "m*V",
+        "isCorrect": false
+      },
+      {
+        "text": "m/V",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Jaké je druhové jméno pryskyřníku?",
+    "answers": [
+      {
+        "text": "žlutý",
+        "isCorrect": false
+      },
+      {
+        "text": "prudký",
+        "isCorrect": true
+      },
+      {
+        "text": "jedovatý",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Kolik kilometrů je Měsíc vzdálen od Země?",
+    "answers": [
+      {
+        "text": "cca 380 000 km",
+        "isCorrect": true
+      },
+      {
+        "text": "cca 38 000 km",
+        "isCorrect": false
+      },
+      {
+        "text": "cca 3 800 km",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Co způsobuje příliv a odliv?",
+    "answers": [
+      {
+        "text": "podmořská zemětřesení",
+        "isCorrect": false
+      },
+      {
+        "text": "vítr",
+        "isCorrect": false
+      },
+      {
+        "text": "gravitace Měsíce",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Kolik měsíců má Mars?",
+    "answers": [
+      {
+        "text": "1",
+        "isCorrect": false
+      },
+      {
+        "text": "0",
+        "isCorrect": false
+      },
+      {
+        "text": "2",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Co je hlavní měnou v Japonsku?",
+    "answers": [
+      {
+        "text": "Yen",
+        "isCorrect": true
+      },
+      {
+        "text": "Yuan",
+        "isCorrect": false
+      },
+      {
+        "text": "Ringgit",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jak se nazývá největší vnitrozemské jezero světa?",
+    "answers": [
+      {
+        "text": "Viktoriino jezero",
+        "isCorrect": false
+      },
+      {
+        "text": "Kaspické moře",
+        "isCorrect": true
+      },
+      {
+        "text": "Bajkal",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Kolik hran má krychle?",
+    "answers": [
+      {
+        "text": "10",
+        "isCorrect": false
+      },
+      {
+        "text": "12",
+        "isCorrect": true
+      },
+      {
+        "text": "8",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jak se nazývá věda o mapách?",
+    "answers": [
+      {
+        "text": "kartografie",
+        "isCorrect": true
+      },
+      {
+        "text": "astronomie",
+        "isCorrect": false
+      },
+      {
+        "text": "geografie",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který stát je nejmenší na světě?",
+    "answers": [
+      {
+        "text": "Malta",
+        "isCorrect": false
+      },
+      {
+        "text": "Vatikán",
+        "isCorrect": true
+      },
+      {
+        "text": "Monako",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jak se nazývá pohyb Země kolem Slunce?",
+    "answers": [
+      {
+        "text": "oběh",
+        "isCorrect": true
+      },
+      {
+        "text": "rotace",
+        "isCorrect": false
+      },
+      {
+        "text": "kmitání",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Která planeta má nejvíce měsíců?",
+    "answers": [
+      {
+        "text": "Saturn",
+        "isCorrect": true
+      },
+      {
+        "text": "Merkur",
+        "isCorrect": false
+      },
+      {
+        "text": "Uran",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jak se nazývá krevní skupina univerzálního příjemce?",
+    "answers": [
+      {
+        "text": "0",
+        "isCorrect": false
+      },
+      {
+        "text": "A",
+        "isCorrect": false
+      },
+      {
+        "text": "AB",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Který stát je kolébkou olympijských her?",
+    "answers": [
+      {
+        "text": "Řecko",
+        "isCorrect": true
+      },
+      {
+        "text": "Španělsko",
+        "isCorrect": false
+      },
+      {
+        "text": "Itálie",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jak se nazývá hlavní město Brazílie?",
+    "answers": [
+      {
+        "text": "São Paulo",
+        "isCorrect": false
+      },
+      {
+        "text": "Brasília",
+        "isCorrect": true
+      },
+      {
+        "text": "Rio de Janeiro",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Celkem otázek",
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "text": "84",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Zkontrolováno/Opraveno",
+    "answers": [
+      {
+        "text": "78",
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "ZAMÍCHANÉ",
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  }
+]

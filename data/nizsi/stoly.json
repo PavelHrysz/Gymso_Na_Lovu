@@ -1,0 +1,68 @@
+{
+  "nižší": [
+    {
+      "id": 1,
+      "jmeno": "Jindřich"
+    },
+    {
+      "id": 2,
+      "jmeno": "Matěj"
+    },
+    {
+      "id": 3,
+      "jmeno": "Tomáš"
+    },
+    {
+      "id": 4,
+      "jmeno": "Tomáš"
+    },
+    {
+      "id": 5,
+      "jmeno": "Laura"
+    }
+  ],
+  "vyšší": [
+    {
+      "id": 1,
+      "jmeno": "Barča"
+    },
+    {
+      "id": 2,
+      "jmeno": "Fanda"
+    },
+    {
+      "id": 3,
+      "jmeno": "Tonda"
+    },
+    {
+      "id": 4,
+      "jmeno": "Róza"
+    },
+    {
+      "id": 5,
+      "jmeno": "David"
+    }
+  ],
+  "ucitele": [
+    {
+      "id": 1,
+      "jmeno": "František"
+    },
+    {
+      "id": 2,
+      "jmeno": "Stanley"
+    },
+    {
+      "id": 3,
+      "jmeno": "Vladimír"
+    },
+    {
+      "id": 4,
+      "jmeno": "Michaela"
+    },
+    {
+      "id": 5,
+      "jmeno": "Tu nikdo"
+    }
+  ]
+}

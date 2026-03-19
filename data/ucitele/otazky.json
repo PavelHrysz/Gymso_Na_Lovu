@@ -1,0 +1,1954 @@
+[
+  {
+    "question": "Která je druhá nejdelší evropská řeka?",
+    "answers": [
+      {
+        "text": "Volha",
+        "isCorrect": false
+      },
+      {
+        "text": "Dunaj",
+        "isCorrect": true
+      },
+      {
+        "text": "Dněpr",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Podle koho nebo čeho se jmenuje česká kapela Chinaski?",
+    "answers": [
+      {
+        "text": "podle japonského výrobce motocyklů ",
+        "isCorrect": false
+      },
+      {
+        "text": "podle literární postavy z děl Charlese Bukowského",
+        "isCorrect": true
+      },
+      {
+        "text": "podle zaniklé šlechtické rodiny z východních Čech",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který z těchto skutečných názvů českých obcí byste našli na mapě?",
+    "answers": [
+      {
+        "text": "Kozodírky",
+        "isCorrect": true
+      },
+      {
+        "text": "Knedlíkov",
+        "isCorrect": false
+      },
+      {
+        "text": "Papuče",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jak se jmenuje tým NHL, který do soutěže vstoupil v ročníku 1991/92?",
+    "answers": [
+      {
+        "text": "San Jose Sharks",
+        "isCorrect": true
+      },
+      {
+        "text": "Tampa Bay Lightning",
+        "isCorrect": false
+      },
+      {
+        "text": " Ottawa Senators",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jaký unikátní předmět najdete v muzeu v Pelhřimově, který je vyrobený kompletně ze zápalkového dřeva?",
+    "answers": [
+      {
+        "text": "Funkční model gilotiny v životní velikosti",
+        "isCorrect": false
+      },
+      {
+        "text": "Funkční housle",
+        "isCorrect": true
+      },
+      {
+        "text": "Replika hradu Karlštejn, která slouží jako psí bouda",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Co musíte mít podle vyhlášky v Česku u sebe, pokud se rozhodnete jet na veřejné komunikaci na koni?",
+    "answers": [
+      {
+        "text": "Řidičský průkaz skupiny K",
+        "isCorrect": false
+      },
+      {
+        "text": "Reflexní vestu nasazenou na ocase koně",
+        "isCorrect": false
+      },
+      {
+        "text": "Minimální věk 12 let",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Ve kterém roce byla Bitva u Waterloo?",
+    "answers": [
+      {
+        "text": "1818",
+        "isCorrect": false
+      },
+      {
+        "text": "1815",
+        "isCorrect": true
+      },
+      {
+        "text": "1812",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Které z těchto hradů byste v České republice mohly opravdu navštívit (respektive jeho zříceninu)?",
+    "answers": [
+      {
+        "text": "Hrad Špagetka",
+        "isCorrect": false
+      },
+      {
+        "text": "Hrad Sendvič",
+        "isCorrect": false
+      },
+      {
+        "text": "Hrad Pudlák",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Který český herec v komedii Jáchyme, hoď ho do stroje! skutečně sjel schody na motocyklu, bez zastoupení kaskadérem?",
+    "answers": [
+      {
+        "text": "Josef Dvořák",
+        "isCorrect": false
+      },
+      {
+        "text": "Luděk Sobota",
+        "isCorrect": true
+      },
+      {
+        "text": "Petr Nárožný",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Ze které země pocházel spisovatel Gabriel Garcia Márquez?",
+    "answers": [
+      {
+        "text": "Kolumbie",
+        "isCorrect": true
+      },
+      {
+        "text": "Španělsko",
+        "isCorrect": false
+      },
+      {
+        "text": "Mexiko",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "V čem se v České republice (konkrétně v obci Pohleď) koná každoroční mistrovství světa, kterého se účastní stovky lidí?",
+    "answers": [
+      {
+        "text": "V hodu holínkou",
+        "isCorrect": true
+      },
+      {
+        "text": "V hodu mobilním telefonem do dálky",
+        "isCorrect": false
+      },
+      {
+        "text": "V plivání třešňovou peckou na cíl",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Ve které české obci najdete kuriozitu zvanou „Zastávka na znamení kousek od hřbitova“?",
+    "answers": [
+      {
+        "text": "Sokolov",
+        "isCorrect": false
+      },
+      {
+        "text": "Hrob",
+        "isCorrect": false
+      },
+      {
+        "text": "Onen Svět",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Jak se v legendárním českém dabingu filmu Pulp Fiction přeložil název čtvrti „The Valley“, kam postavy jezdí za drogami?",
+    "answers": [
+      {
+        "text": "Jižní Město",
+        "isCorrect": true
+      },
+      {
+        "text": "Dolní Lhota",
+        "isCorrect": false
+      },
+      {
+        "text": "Libeň",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který český politik se proslavil tím, že před kamerami v rámci kampaně s chutí pojídal gumový rohlík, aby dokázal, že je kvalitní?",
+    "answers": [
+      {
+        "text": "Jiří Paroubek",
+        "isCorrect": true
+      },
+      {
+        "text": "Milož Zeman",
+        "isCorrect": false
+      },
+      {
+        "text": "Andrej Babiš",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Kolik procent českých domácností vyrazí podle průzkumů alespoň jednou ročně do lesa na houby?",
+    "answers": [
+      {
+        "text": "více než 70%",
+        "isCorrect": true
+      },
+      {
+        "text": "Cca 45%",
+        "isCorrect": false
+      },
+      {
+        "text": "Cca 20%",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který herec nehrál ve filmu Pelíšky?",
+    "answers": [
+      {
+        "text": "Ivan Trojan",
+        "isCorrect": true
+      },
+      {
+        "text": "Jaroslav Dušek",
+        "isCorrect": false
+      },
+      {
+        "text": "Michael Beran",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Populární americká herečka Kate Hudson má i neméně slavnou matku. Jmenuje se: ",
+    "answers": [
+      {
+        "text": "Diane Keaton",
+        "isCorrect": false
+      },
+      {
+        "text": "Meryl Streep",
+        "isCorrect": false
+      },
+      {
+        "text": "Goldie Hawn",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Ve kterém českém městě najdete muzeum s největší sbírkou na světě věnované výhradně historickým nočníkům a toaletám?",
+    "answers": [
+      {
+        "text": "V Kutné Hoře ",
+        "isCorrect": false
+      },
+      {
+        "text": "V Praze ",
+        "isCorrect": true
+      },
+      {
+        "text": "V Pardubicích ",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Ze kterého města pochází tým NFL s přízviskem Giants?",
+    "answers": [
+      {
+        "text": "Los Angeles",
+        "isCorrect": false
+      },
+      {
+        "text": "New York",
+        "isCorrect": true
+      },
+      {
+        "text": "Miami",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který americký prezident získal v roce 2002 Nobelovu cenu míru?",
+    "answers": [
+      {
+        "text": "George W. Bush",
+        "isCorrect": false
+      },
+      {
+        "text": "Jimmy Carter",
+        "isCorrect": true
+      },
+      {
+        "text": "Ronald Reagan",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jak se jmenuje první manželka herce Petra Štěpánka?",
+    "answers": [
+      {
+        "text": "Zlata Adamovská",
+        "isCorrect": false
+      },
+      {
+        "text": "Regina Rázlová",
+        "isCorrect": true
+      },
+      {
+        "text": "Jana Štěpánková",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jak se jmenuje typicky český „vynález“, který v roce 1916 proslavil pražský lahůdkář Jan Paukert?",
+    "answers": [
+      {
+        "text": "Obložený chlebíček ",
+        "isCorrect": true
+      },
+      {
+        "text": "Smažený sýr v housce",
+        "isCorrect": false
+      },
+      {
+        "text": "Utopenec s cibulí ",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Kterou částí oděvu je fedora?",
+    "answers": [
+      {
+        "text": "kloboukem",
+        "isCorrect": true
+      },
+      {
+        "text": "vázankou",
+        "isCorrect": false
+      },
+      {
+        "text": "sukní",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jak zní přezdívka legendárního závodníka na silničních motocyklech Valentina Rossiho?",
+    "answers": [
+      {
+        "text": "Profesor",
+        "isCorrect": false
+      },
+      {
+        "text": "Doktor",
+        "isCorrect": true
+      },
+      {
+        "text": "Gorila z Monzy",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Kdo zvítězil v prvním ročníku soutěže Česko Sloveská SuperStar?",
+    "answers": [
+      {
+        "text": "Lukáš Adamec",
+        "isCorrect": false
+      },
+      {
+        "text": "Gabriela Gunčíková",
+        "isCorrect": false
+      },
+      {
+        "text": "Martin Chodúr",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Co v hudební terminologii znamená andante:",
+    "answers": [
+      {
+        "text": "zdlouhavě, volným pohybem",
+        "isCorrect": false
+      },
+      {
+        "text": "pozvolně, zvolna",
+        "isCorrect": true
+      },
+      {
+        "text": "zrychleně",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který hinduistický bůh má podobu opice?",
+    "answers": [
+      {
+        "text": "Ganéša",
+        "isCorrect": false
+      },
+      {
+        "text": "Hanumán",
+        "isCorrect": true
+      },
+      {
+        "text": "Višnu",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "S kterou písní vyhrála kapela ABBA roku 1974 soutěž Eurovize?",
+    "answers": [
+      {
+        "text": "Mamma Mia",
+        "isCorrect": false
+      },
+      {
+        "text": "Waterloo",
+        "isCorrect": true
+      },
+      {
+        "text": "Super Trouper",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Kdo složil hudbu ke komedii \"Což takhle dát si špenát\"?",
+    "answers": [
+      {
+        "text": "Michal David",
+        "isCorrect": false
+      },
+      {
+        "text": "Karel Svoboda",
+        "isCorrect": true
+      },
+      {
+        "text": "Ondřej Soukup",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "V roce 1970 došlo na hoře Huascarán k tragédii výpravy československých horolezců. Ve které zemi horu najdeme?",
+    "answers": [
+      {
+        "text": "Bolívie",
+        "isCorrect": false
+      },
+      {
+        "text": "Peru",
+        "isCorrect": true
+      },
+      {
+        "text": "Chile",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Batynomus obrovský je...",
+    "answers": [
+      {
+        "text": "ryba",
+        "isCorrect": false
+      },
+      {
+        "text": "korýš",
+        "isCorrect": true
+      },
+      {
+        "text": "hmyz",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jak se v českém pivním slangu říká nápoji, který vznikne smícháním světlého piva a kofoly?",
+    "answers": [
+      {
+        "text": "Diesel",
+        "isCorrect": true
+      },
+      {
+        "text": "Koňopivo ",
+        "isCorrect": false
+      },
+      {
+        "text": "Černá vdova",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který z těchto románů napsal Fjodor Michajlovič Dostojevskij jako první?",
+    "answers": [
+      {
+        "text": "Idiot ",
+        "isCorrect": false
+      },
+      {
+        "text": "Běsi ",
+        "isCorrect": false
+      },
+      {
+        "text": "Zločin a trest ",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Který z těchto států má největší rozlohu?",
+    "answers": [
+      {
+        "text": "Čína ",
+        "isCorrect": false
+      },
+      {
+        "text": "Kanada ",
+        "isCorrect": true
+      },
+      {
+        "text": "USA",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který český šlechtický rod vymřel po meči roku 1306 zavražděním posledního mužského člena?",
+    "answers": [
+      {
+        "text": "Přemyslovci ",
+        "isCorrect": true
+      },
+      {
+        "text": "Lucemburkové",
+        "isCorrect": false
+      },
+      {
+        "text": "Rožmberkové",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který z těchto jazyků patří do ugrofinské větve?",
+    "answers": [
+      {
+        "text": "Maďarština ",
+        "isCorrect": true
+      },
+      {
+        "text": "Litevština ",
+        "isCorrect": false
+      },
+      {
+        "text": "Albánština ",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který stát má nejvyšší HDP na obyvatele (nominálně, dlouhodobě se drží na špici světových žebříčků)?",
+    "answers": [
+      {
+        "text": "Norsko ",
+        "isCorrect": false
+      },
+      {
+        "text": "Lucembursko ",
+        "isCorrect": true
+      },
+      {
+        "text": "Švýcarsko ",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Ve kterém roce začala Válka růží?",
+    "answers": [
+      {
+        "text": "1485",
+        "isCorrect": false
+      },
+      {
+        "text": "1455",
+        "isCorrect": true
+      },
+      {
+        "text": "1471",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který z těchto fyziků získal Nobelovu cenu za teorii relativity?",
+    "answers": [
+      {
+        "text": "Albert Einstein ",
+        "isCorrect": false
+      },
+      {
+        "text": "Ani jeden z uvedených ",
+        "isCorrect": true
+      },
+      {
+        "text": "Max Planck ",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který autor je představitelem magického realismu?",
+    "answers": [
+      {
+        "text": "Albert Camus ",
+        "isCorrect": false
+      },
+      {
+        "text": "Franz Kafka ",
+        "isCorrect": false
+      },
+      {
+        "text": "Gabriel García Márquez",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Která látka v citronu je hlavní příčinou jeho kyselé chuti?",
+    "answers": [
+      {
+        "text": "kyselina citronová",
+        "isCorrect": true
+      },
+      {
+        "text": "kyselina askorbová",
+        "isCorrect": false
+      },
+      {
+        "text": "glukóza ",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jakou barvu má lev na českém státním znaku a na jakém pozadí je vyobrazen?",
+    "answers": [
+      {
+        "text": "Stříbrný lev na červeném poli",
+        "isCorrect": true
+      },
+      {
+        "text": "Bílý lev na červeném poli ",
+        "isCorrect": false
+      },
+      {
+        "text": "Zlatý lev na modrém poli ",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Které album Heleny Vondráčkové se stalo nejprodávanějším v její kariéře?",
+    "answers": [
+      {
+        "text": "\"Dnes už vím\"",
+        "isCorrect": true
+      },
+      {
+        "text": "\"Roky a dny\"",
+        "isCorrect": false
+      },
+      {
+        "text": "\"Bůh ví\"",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Karbid křemíku je sloučeninou křemíku a čeho?",
+    "answers": [
+      {
+        "text": "hliníku",
+        "isCorrect": false
+      },
+      {
+        "text": "uhlíku",
+        "isCorrect": true
+      },
+      {
+        "text": "kobaltu",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Která z uvedených zemí má na vlajce modrou barvu?",
+    "answers": [
+      {
+        "text": "Bulharsko",
+        "isCorrect": false
+      },
+      {
+        "text": "Bosna a Hercegovina",
+        "isCorrect": true
+      },
+      {
+        "text": "Belgie",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Během druhé světové války se rozhořela operace Pochodeň, což byla invaze spojeneckých vojsk do:",
+    "answers": [
+      {
+        "text": "Japonska",
+        "isCorrect": false
+      },
+      {
+        "text": "severní Afriky",
+        "isCorrect": true
+      },
+      {
+        "text": "Normandie",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Ve kterém pohoří najdeme horu Nanga Parbat?",
+    "answers": [
+      {
+        "text": "Karákóram",
+        "isCorrect": false
+      },
+      {
+        "text": "Hindúkuš",
+        "isCorrect": false
+      },
+      {
+        "text": "Himaláj",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Ze kterého roku pochází první rentgenový snímek?",
+    "answers": [
+      {
+        "text": "1895",
+        "isCorrect": true
+      },
+      {
+        "text": "1885",
+        "isCorrect": false
+      },
+      {
+        "text": "1905",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Které dívčí jméno nese tvrz v Orlických horách, která byla tajně přebudována na protiatomový kryt?",
+    "answers": [
+      {
+        "text": "Barunka",
+        "isCorrect": false
+      },
+      {
+        "text": "Hanička",
+        "isCorrect": true
+      },
+      {
+        "text": "Terezka",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Ve kterém státě Jižní Ameriky leží nejvyšší hora kontinentu Aconcagua?",
+    "answers": [
+      {
+        "text": "v Argentině",
+        "isCorrect": true
+      },
+      {
+        "text": "v Ekvádoru",
+        "isCorrect": false
+      },
+      {
+        "text": "v Peru",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jaké je vlastní jméno českého hudebníka Felixe Slováčka?",
+    "answers": [
+      {
+        "text": "František",
+        "isCorrect": false
+      },
+      {
+        "text": "Jiří",
+        "isCorrect": false
+      },
+      {
+        "text": "Antonín",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Jaká byla maximální kapacita pasažérů Titanicu?",
+    "answers": [
+      {
+        "text": "4420 lidí",
+        "isCorrect": false
+      },
+      {
+        "text": "3320 lidí",
+        "isCorrect": true
+      },
+      {
+        "text": "2220 lidí",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Se kterou zpěvačkou nahrála kapela Maroon 5 singl Moves like Jagger?",
+    "answers": [
+      {
+        "text": "s Rihannou",
+        "isCorrect": false
+      },
+      {
+        "text": "s Madonnou",
+        "isCorrect": false
+      },
+      {
+        "text": "Christinou Aguilerou",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Jak se jmenuje hlavní město Kazachstánu?",
+    "answers": [
+      {
+        "text": "Nur-Sultan",
+        "isCorrect": true
+      },
+      {
+        "text": "Almaty",
+        "isCorrect": false
+      },
+      {
+        "text": "Karaganda",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který z uvedených raketoplánů NASA byl vyroben jako poslední?",
+    "answers": [
+      {
+        "text": "Challenger",
+        "isCorrect": true
+      },
+      {
+        "text": "Enterprise",
+        "isCorrect": false
+      },
+      {
+        "text": "Columbia",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Ve které zemi zemřel Charlie Chaplin?",
+    "answers": [
+      {
+        "text": "Švýcarsko",
+        "isCorrect": true
+      },
+      {
+        "text": "Francie",
+        "isCorrect": false
+      },
+      {
+        "text": "Velká Británie",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jak se dříve jmenovala Burkina Faso?",
+    "answers": [
+      {
+        "text": "Dahome",
+        "isCorrect": false
+      },
+      {
+        "text": "Horní Volta",
+        "isCorrect": true
+      },
+      {
+        "text": "Dolní Volta",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který z amerických prezidentů není znázorněn na památníků Mount Rushmore?",
+    "answers": [
+      {
+        "text": "Theodore Roosevelt",
+        "isCorrect": false
+      },
+      {
+        "text": "John Kennedy",
+        "isCorrect": true
+      },
+      {
+        "text": "Thomas Jefferson",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Na kterou z těchto pamětihodností nenarazíte při kompletním vodáckém sjezdu řeky Vltavy?",
+    "answers": [
+      {
+        "text": "na hrad Zvíkov",
+        "isCorrect": false
+      },
+      {
+        "text": "na zříceninu Karlův Hrádek",
+        "isCorrect": false
+      },
+      {
+        "text": "na hrad Český Šternberk",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Jaká je česká varianta italského jména Luigi?",
+    "answers": [
+      {
+        "text": "Lukáš",
+        "isCorrect": false
+      },
+      {
+        "text": "Ludvík",
+        "isCorrect": true
+      },
+      {
+        "text": "Alois",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Která z uvedených univerzit je nejstarší?",
+    "answers": [
+      {
+        "text": "Universitá di Bologna",
+        "isCorrect": true
+      },
+      {
+        "text": "Universidade de Coimbra",
+        "isCorrect": false
+      },
+      {
+        "text": "University of Cambridge",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Mazlíčkem kterého módního návrháře byla kočka jménem Choupette?",
+    "answers": [
+      {
+        "text": "Gianniho Versaceho",
+        "isCorrect": false
+      },
+      {
+        "text": "Karla Lagerfelda",
+        "isCorrect": true
+      },
+      {
+        "text": "Calvina Kleina",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jaká je délka zaoceánské loni Queen Mary 2?",
+    "answers": [
+      {
+        "text": "420 metrů",
+        "isCorrect": false
+      },
+      {
+        "text": "457 metrů",
+        "isCorrect": false
+      },
+      {
+        "text": "345 metrů",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Jaké státní zřízení najdeme na souostroví Tonga?",
+    "answers": [
+      {
+        "text": "konstituční monarchie",
+        "isCorrect": true
+      },
+      {
+        "text": "prezidentská republika",
+        "isCorrect": false
+      },
+      {
+        "text": "parlamentní republika",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který japonský režisér natočil snímky Můj soused Totoro, Cesta do fantazie či Zámek v oblacích?",
+    "answers": [
+      {
+        "text": "Akira Kurosawa",
+        "isCorrect": false
+      },
+      {
+        "text": "Hajao Mijazaki",
+        "isCorrect": true
+      },
+      {
+        "text": "Isao Takahata",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Kdo z uvedených není příslušníkem tzv. Klubu 27?",
+    "answers": [
+      {
+        "text": "Jimi Hendrix",
+        "isCorrect": false
+      },
+      {
+        "text": "Brian Jones",
+        "isCorrect": false
+      },
+      {
+        "text": "Avicii",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Rodné příjmení bývalé manželky Donalda Trumpa Ivany je:",
+    "answers": [
+      {
+        "text": "Zaňáková",
+        "isCorrect": false
+      },
+      {
+        "text": "Zelníčková",
+        "isCorrect": true
+      },
+      {
+        "text": "Zelňáková",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Která pražská nemocnice je nejstarší?",
+    "answers": [
+      {
+        "text": "nemocnice Milosrdných sester sv. Karla Boromejského",
+        "isCorrect": false
+      },
+      {
+        "text": "Thomayerova nemocnice",
+        "isCorrect": false
+      },
+      {
+        "text": "nemocnice Na Františku",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Jakou teplotu má Vřídlo - nejteplejší termální pramen Česka?",
+    "answers": [
+      {
+        "text": "94 °C",
+        "isCorrect": false
+      },
+      {
+        "text": "85 °C",
+        "isCorrect": false
+      },
+      {
+        "text": "73 °C",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Vyberte z nabídky hrad, na kterém nějakou dobu pobýval Jan Hus.",
+    "answers": [
+      {
+        "text": "Krakovec",
+        "isCorrect": true
+      },
+      {
+        "text": "Hukvaldy",
+        "isCorrect": false
+      },
+      {
+        "text": "Šumburk",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Ve které válce se angažoval Albrecht z Valdštejna?",
+    "answers": [
+      {
+        "text": "ve stoleté válce",
+        "isCorrect": false
+      },
+      {
+        "text": "ve válce o rakouské dědictví",
+        "isCorrect": false
+      },
+      {
+        "text": "ve třicetileté válce",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Ve kterém městě se nachází da Vinciho Poslední večeře?",
+    "answers": [
+      {
+        "text": "Paříž",
+        "isCorrect": false
+      },
+      {
+        "text": "Milán",
+        "isCorrect": true
+      },
+      {
+        "text": "Madrid",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Která z uvedených osobností Velké-francouzské revoluce byla zavražděna při koupeli ve vaně?",
+    "answers": [
+      {
+        "text": "Georges Danton",
+        "isCorrect": false
+      },
+      {
+        "text": "Jean Paul Marat",
+        "isCorrect": true
+      },
+      {
+        "text": "Maximilien Robespierre",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Na území kterého dnešního státu ležela starověká Troja?",
+    "answers": [
+      {
+        "text": "Turecka",
+        "isCorrect": true
+      },
+      {
+        "text": "Bulharska",
+        "isCorrect": false
+      },
+      {
+        "text": "Řecka",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Most krále Fahda spojuje Saúdskou Arábii s...",
+    "answers": [
+      {
+        "text": "Katarem",
+        "isCorrect": false
+      },
+      {
+        "text": "Jemenem",
+        "isCorrect": false
+      },
+      {
+        "text": "Bahrajnem",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Kterou zemi reprezentovala Céline Dion na soutěži Eurovision Song Contest v roce 1988?",
+    "answers": [
+      {
+        "text": "Belgii",
+        "isCorrect": false
+      },
+      {
+        "text": "Francii",
+        "isCorrect": false
+      },
+      {
+        "text": "Švýcarsko",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Jak se jmenuje první vydaná kniha z cyklu Zeměplocha?",
+    "answers": [
+      {
+        "text": "Barva kouzel",
+        "isCorrect": true
+      },
+      {
+        "text": "Lehké fantastično",
+        "isCorrect": false
+      },
+      {
+        "text": "Čarodějky na cestách",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Která z uvedených rakouských spolkových zemí sousedí s ČR?",
+    "answers": [
+      {
+        "text": "Korutany",
+        "isCorrect": false
+      },
+      {
+        "text": "Burgenland",
+        "isCorrect": false
+      },
+      {
+        "text": "Dolní Rakousy",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Která herečka nejčastěji dabuje do češtiny Meryl Streepovou?",
+    "answers": [
+      {
+        "text": "Zlata Adamovská",
+        "isCorrect": true
+      },
+      {
+        "text": "Ljuba Krbová",
+        "isCorrect": false
+      },
+      {
+        "text": "Zuzana Slavíková",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Která herečka byla posedlá postavou v podání Michaela Douglase ve filmu Osudová přitažlivost?",
+    "answers": [
+      {
+        "text": "Demi Moore",
+        "isCorrect": false
+      },
+      {
+        "text": "Glenn Close",
+        "isCorrect": true
+      },
+      {
+        "text": "Sharon Stone",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jaké z uvedených jmen v minulosti nepatřilo městu Volgograd?",
+    "answers": [
+      {
+        "text": "Caricyn",
+        "isCorrect": false
+      },
+      {
+        "text": "Leningrad",
+        "isCorrect": true
+      },
+      {
+        "text": "Stalingrad",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Ke kterému rodu stromů patří osika?",
+    "answers": [
+      {
+        "text": "onkoba",
+        "isCorrect": false
+      },
+      {
+        "text": "topol",
+        "isCorrect": true
+      },
+      {
+        "text": "vrba",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Z kterého filmu pochází hláška: \"On teda cihlu do ruky nevezme, ale odborník je to na slovo vzatý\"?",
+    "answers": [
+      {
+        "text": "Vesničko má středisková",
+        "isCorrect": false
+      },
+      {
+        "text": "Slavnosti sněženek",
+        "isCorrect": false
+      },
+      {
+        "text": "Na samotě u lesa",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Ve kterém městě stojí proslulý most Ponte Vecchio?",
+    "answers": [
+      {
+        "text": "Neapol",
+        "isCorrect": false
+      },
+      {
+        "text": "Milán",
+        "isCorrect": false
+      },
+      {
+        "text": "Florencie",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Jaká dynastie vládla v Číně mezi lety 1368 - 1644?",
+    "answers": [
+      {
+        "text": "Juan",
+        "isCorrect": false
+      },
+      {
+        "text": "Ming",
+        "isCorrect": true
+      },
+      {
+        "text": "Čching",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Které příjmení je druhé nejčetnější v České republice?",
+    "answers": [
+      {
+        "text": "Svoboda",
+        "isCorrect": true
+      },
+      {
+        "text": "Černý",
+        "isCorrect": false
+      },
+      {
+        "text": "Novotný",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jaké bylo původní povolání Jurije Gagarina?",
+    "answers": [
+      {
+        "text": "truhlář",
+        "isCorrect": false
+      },
+      {
+        "text": "elektrikář",
+        "isCorrect": false
+      },
+      {
+        "text": "slévač",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Jak se jmenuje herec, který ve filmu Zápisník jedné lásky ztvárnil hlavní postavu Noaha?",
+    "answers": [
+      {
+        "text": "Daniel Radclife",
+        "isCorrect": false
+      },
+      {
+        "text": "George Clooney",
+        "isCorrect": false
+      },
+      {
+        "text": "Ryan Gosling",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Který z následujících kontinentů patří do ságy Píseň ledu a ohně George R. R. Martina?",
+    "answers": [
+      {
+        "text": "Valinor",
+        "isCorrect": false
+      },
+      {
+        "text": "Středozem",
+        "isCorrect": false
+      },
+      {
+        "text": "Západozemní",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Jak se nazývá modlitební kniha s modlitbami různých druhů pro celý církevní rok?",
+    "answers": [
+      {
+        "text": "evangelistář",
+        "isCorrect": false
+      },
+      {
+        "text": "graduál",
+        "isCorrect": false
+      },
+      {
+        "text": "breviář",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Která CHKO v ČR je nejstarší?",
+    "answers": [
+      {
+        "text": "Moravský kras",
+        "isCorrect": false
+      },
+      {
+        "text": "Šumava",
+        "isCorrect": false
+      },
+      {
+        "text": "Český ráj",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Jak se jmenuje nejvyšší vrchol Německa?",
+    "answers": [
+      {
+        "text": "Brocken",
+        "isCorrect": false
+      },
+      {
+        "text": "Zugspitze",
+        "isCorrect": true
+      },
+      {
+        "text": "Feldberg",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Které z následujících jmen nenajdeme mezi pěticí nejpočetnějších jmen v ČR?",
+    "answers": [
+      {
+        "text": "Jiří",
+        "isCorrect": false
+      },
+      {
+        "text": "Petr",
+        "isCorrect": false
+      },
+      {
+        "text": "Václav",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Kam zavítal agent Jejího Veličenstava v bondovce Dech života s Timothym Daltonem v hlavní roli?",
+    "answers": [
+      {
+        "text": "na jižní pól",
+        "isCorrect": false
+      },
+      {
+        "text": "do Bratislavy",
+        "isCorrect": true
+      },
+      {
+        "text": "na Mount Everest",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Ve kterém americkém státě byl zavražděn Martin Luther King?",
+    "answers": [
+      {
+        "text": "Texas",
+        "isCorrect": false
+      },
+      {
+        "text": "Tennessee",
+        "isCorrect": true
+      },
+      {
+        "text": "Missisippi",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jak se jmenoval český barokní umělec, který je autorem díla Dobrá kočka, která nemlsá?",
+    "answers": [
+      {
+        "text": "Petr Brandl",
+        "isCorrect": false
+      },
+      {
+        "text": "Karel Škréta",
+        "isCorrect": false
+      },
+      {
+        "text": "Václav Hollar",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Kolik přesně hvězd najdeme na vlajce Austrálie?",
+    "answers": [
+      {
+        "text": "tři",
+        "isCorrect": false
+      },
+      {
+        "text": "šest",
+        "isCorrect": true
+      },
+      {
+        "text": "dvanáct",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Kolik ze dvaceti nejdelších světových řek najdeme na africkém kontinentu?",
+    "answers": [
+      {
+        "text": "3",
+        "isCorrect": true
+      },
+      {
+        "text": "5",
+        "isCorrect": false
+      },
+      {
+        "text": "2",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jak se jmenoval zakladatel první tajné sovětské policie Čeka?",
+    "answers": [
+      {
+        "text": "Felix Dzeržinskij",
+        "isCorrect": true
+      },
+      {
+        "text": "Lavrenstij Berija",
+        "isCorrect": false
+      },
+      {
+        "text": "Lev Trockij",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Která slavná modelka byla v 90. letech životní partnerkou kouzelníka Davida Copperfielda?",
+    "answers": [
+      {
+        "text": "Heidi Klum",
+        "isCorrect": false
+      },
+      {
+        "text": "Kate Moss",
+        "isCorrect": false
+      },
+      {
+        "text": "Claudia Schiffer",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Celkem otázek",
+    "answers": [
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Zkontrolováno/Opraveno",
+    "answers": [
+      {
+        "text": "104",
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "ZAMÍCHANÉ",
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "text": "0",
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  }
+]

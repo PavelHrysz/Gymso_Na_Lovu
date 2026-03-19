@@ -1,0 +1,1859 @@
+[
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Kdo byl jediným českým eurokomisařem, který se narodil v Sokolově?",
+    "answers": [
+      {
+        "text": "Věra Jourová",
+        "isCorrect": false
+      },
+      {
+        "text": "Štefan Füle",
+        "isCorrect": true
+      },
+      {
+        "text": "Vladimír Špidla",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Která známá zpěvačka ztvárnila animovanou postavu Gazely ve filmu Zootropolis?",
+    "answers": [
+      {
+        "text": "Taylor Swift",
+        "isCorrect": false
+      },
+      {
+        "text": "Shakira",
+        "isCorrect": true
+      },
+      {
+        "text": "Dua Lipa",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jak bychom měli správně oslovit kardinála?",
+    "answers": [
+      {
+        "text": "Vaše Excelence",
+        "isCorrect": false
+      },
+      {
+        "text": "Vaše Eminence",
+        "isCorrect": true
+      },
+      {
+        "text": "Vaše Magnificence",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Kdo v Československu jako poslední dostal trest smrti, který byl vykonán?",
+    "answers": [
+      {
+        "text": "Zdeněk Vocásek",
+        "isCorrect": false
+      },
+      {
+        "text": "Vladimír Lulek",
+        "isCorrect": false
+      },
+      {
+        "text": "Štefan Svitek ",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Jak se nazývá kyberútok využívající automatizované zkoušení všech možných kombinací hesel?",
+    "answers": [
+      {
+        "text": "Brute Force",
+        "isCorrect": true
+      },
+      {
+        "text": "DDoS",
+        "isCorrect": false
+      },
+      {
+        "text": "SQL injection",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Ve kterém dnešním státě se narodil slavný britský spisovatel George Orwell?",
+    "answers": [
+      {
+        "text": "Indie",
+        "isCorrect": true
+      },
+      {
+        "text": "Austrálie",
+        "isCorrect": false
+      },
+      {
+        "text": "Kanada",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Nejvzdálenější bod od středu země leží na které hoře?",
+    "answers": [
+      {
+        "text": "Chimborazo",
+        "isCorrect": true
+      },
+      {
+        "text": "Mt. Everest",
+        "isCorrect": false
+      },
+      {
+        "text": "Kilimandžáro",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Ve kterém roce byla založena firma Apple?",
+    "answers": [
+      {
+        "text": "1976",
+        "isCorrect": true
+      },
+      {
+        "text": "1961",
+        "isCorrect": false
+      },
+      {
+        "text": "1958",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který slovanský bůh je ekvivalentem k římskému bohu Jupiterovi?",
+    "answers": [
+      {
+        "text": "Perun",
+        "isCorrect": true
+      },
+      {
+        "text": "Zeus",
+        "isCorrect": false
+      },
+      {
+        "text": "Thór",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Hipopotomonstroseskvipedaliofobie je fobie z čeho?",
+    "answers": [
+      {
+        "text": "z příšer pod postelí",
+        "isCorrect": false
+      },
+      {
+        "text": "z přerostlých hrochů",
+        "isCorrect": false
+      },
+      {
+        "text": "z dlouhých slov",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Který církevní hodnostář smí používat titul \"Římský biskup, Zástupce Ježíše Krista na zemi, Nástupce sv. Petra, nejvyšší pontifik, italský primas, arcibiskup a metropolita římské provincie, suverén vatikánského státu a Služebník služebníků Božích\"?",
+    "answers": [
+      {
+        "text": "Apoštolský prefekt Jeho Svatosti",
+        "isCorrect": false
+      },
+      {
+        "text": "Papež",
+        "isCorrect": true
+      },
+      {
+        "text": "Děkan Svatého stolce",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jak se nazývá Mt. Everest v nepálštině?",
+    "answers": [
+      {
+        "text": "Everest",
+        "isCorrect": false
+      },
+      {
+        "text": "Džomolangma",
+        "isCorrect": false
+      },
+      {
+        "text": "Sagarmátha",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Jméno kterého českého světce má uveden ve svém celém jméně umělec Pablo Picaso?",
+    "answers": [
+      {
+        "text": "sv. Jan Nepomucký",
+        "isCorrect": true
+      },
+      {
+        "text": "sv. Vojtěch",
+        "isCorrect": false
+      },
+      {
+        "text": "sv. Václav ",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Čím se zabývá §666 Nového občanského zákoníku?",
+    "answers": [
+      {
+        "text": "dědickým řízením",
+        "isCorrect": false
+      },
+      {
+        "text": "církevním sňatkem",
+        "isCorrect": true
+      },
+      {
+        "text": "určením otcovstí",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Která z uvedených matematických konstant má vyšší číselnou hodnotu?",
+    "answers": [
+      {
+        "text": "π (Ludolfovo číslo)",
+        "isCorrect": true
+      },
+      {
+        "text": "e (Eulerovo číslo)",
+        "isCorrect": false
+      },
+      {
+        "text": "G (Catalanova konstanta)",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Latimérie podivná je...",
+    "answers": [
+      {
+        "text": "plaz",
+        "isCorrect": false
+      },
+      {
+        "text": "ryba",
+        "isCorrect": true
+      },
+      {
+        "text": "hmyz",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Kdo, pod přezdívkou Budha, je zakladatelem budhismu?",
+    "answers": [
+      {
+        "text": "Mahátma Gándhí",
+        "isCorrect": false
+      },
+      {
+        "text": "Siddhártha Gautama",
+        "isCorrect": true
+      },
+      {
+        "text": "Džaváharlál Néhrú",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který český ekonom působil jako poradce Ernesta Che Guevary na Kubě?",
+    "answers": [
+      {
+        "text": "Ota Šik",
+        "isCorrect": false
+      },
+      {
+        "text": "Valtr Komárek",
+        "isCorrect": true
+      },
+      {
+        "text": "Karel Engliš",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který pedagog Gymnázia Sokolov se jako soutěžící zúčastnil Olympijských her v Londýně roku 2012?",
+    "answers": [
+      {
+        "text": "Ivana Sekyrová",
+        "isCorrect": true
+      },
+      {
+        "text": "Lenka Žáková",
+        "isCorrect": false
+      },
+      {
+        "text": "Václav Sobotka",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Kde sídlí Soudní dvůr Evropské unie?",
+    "answers": [
+      {
+        "text": "Frankfurt nad Mohanem",
+        "isCorrect": false
+      },
+      {
+        "text": "Lucemburk",
+        "isCorrect": true
+      },
+      {
+        "text": "Brusel",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Z čeho se vyrábí tahini?",
+    "answers": [
+      {
+        "text": "ze sezamových semínek",
+        "isCorrect": true
+      },
+      {
+        "text": "z makadamových oříšků",
+        "isCorrect": false
+      },
+      {
+        "text": "z cizrny",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Kterou řeku přemosťuje nejstarší dochovaný kamenný most v České republice?",
+    "answers": [
+      {
+        "text": "Vltavu",
+        "isCorrect": false
+      },
+      {
+        "text": "Moravu",
+        "isCorrect": false
+      },
+      {
+        "text": "Otavu",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Který hrad v seriálu \"Hra o trůny\" je největší? ",
+    "answers": [
+      {
+        "text": "Winterfell",
+        "isCorrect": false
+      },
+      {
+        "text": "Harrenhal",
+        "isCorrect": true
+      },
+      {
+        "text": "Dreadfort",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Kde byl vynalezen toaletní papír?",
+    "answers": [
+      {
+        "text": "Japonsku",
+        "isCorrect": false
+      },
+      {
+        "text": "v Řecku ",
+        "isCorrect": false
+      },
+      {
+        "text": "v Číně",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Jaké je rodné jméno Marka Ztraceného?",
+    "answers": [
+      {
+        "text": "Miroslav Slodičák",
+        "isCorrect": true
+      },
+      {
+        "text": "Michal Svobodný",
+        "isCorrect": false
+      },
+      {
+        "text": "Milan Hledaný",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který stát USA je největší podle rozlohy?",
+    "answers": [
+      {
+        "text": "Arizona",
+        "isCorrect": false
+      },
+      {
+        "text": "Texas",
+        "isCorrect": false
+      },
+      {
+        "text": "Aljaška",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Za jaký film dostal Leonardo DiCaprio svého prvního Oscara?",
+    "answers": [
+      {
+        "text": "Krvavý diamant",
+        "isCorrect": false
+      },
+      {
+        "text": "Letec",
+        "isCorrect": false
+      },
+      {
+        "text": "Revenant Zmrtvýchvstání",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Jak se jmenuje nejznámější překážka ve Velké pardubické?",
+    "answers": [
+      {
+        "text": "Váňův příkop",
+        "isCorrect": false
+      },
+      {
+        "text": "Hadí příkop",
+        "isCorrect": false
+      },
+      {
+        "text": "Taxisův příkop",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Ayran je ",
+    "answers": [
+      {
+        "text": "alkohol",
+        "isCorrect": false
+      },
+      {
+        "text": "turecký jogurtový nápoj",
+        "isCorrect": true
+      },
+      {
+        "text": "druh koláče",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Ve kterém městě začíná americká silnice ROUTE 66?",
+    "answers": [
+      {
+        "text": "v Chicagu",
+        "isCorrect": true
+      },
+      {
+        "text": "v Kansas City",
+        "isCorrect": false
+      },
+      {
+        "text": "v New Yorku",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jak se jmenuje český retroseriál, ve kterém hraje např. Roman Vojtek, Andrea Kerestešová nebo Veronika Freimanová? ",
+    "answers": [
+      {
+        "text": "Vyprávěj",
+        "isCorrect": true
+      },
+      {
+        "text": "Nekecej",
+        "isCorrect": false
+      },
+      {
+        "text": "Povídej",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Od kterého roku je Česká republika součástí schengenského prostoru?",
+    "answers": [
+      {
+        "text": "2005",
+        "isCorrect": false
+      },
+      {
+        "text": "2007",
+        "isCorrect": true
+      },
+      {
+        "text": "2010",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jak zní nejznámější reklamní slogan značky Nokia?",
+    "answers": [
+      {
+        "text": "Call Me",
+        "isCorrect": false
+      },
+      {
+        "text": "Connecting People",
+        "isCorrect": true
+      },
+      {
+        "text": "Share and Care",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Ke které značce bot patří modely jako samba, campus nebo gazela?",
+    "answers": [
+      {
+        "text": "Nike",
+        "isCorrect": false
+      },
+      {
+        "text": "Adidas",
+        "isCorrect": true
+      },
+      {
+        "text": "Puma",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Mléko kterého zvířete se používá k výrobě nejdražšího sýra na světě? ",
+    "answers": [
+      {
+        "text": "ovce",
+        "isCorrect": false
+      },
+      {
+        "text": "kozy",
+        "isCorrect": false
+      },
+      {
+        "text": "osla",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Deep dish pizza je druh pizzy pocházející z ...?",
+    "answers": [
+      {
+        "text": "Chicaga",
+        "isCorrect": true
+      },
+      {
+        "text": "Detroitu",
+        "isCorrect": false
+      },
+      {
+        "text": "New Yorku",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Co je to pepito?",
+    "answers": [
+      {
+        "text": "šála",
+        "isCorrect": false
+      },
+      {
+        "text": "vzor látky",
+        "isCorrect": true
+      },
+      {
+        "text": "druh nealko nápoje",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Kdy byla založena skupina Olympic?",
+    "answers": [
+      {
+        "text": "na začátku 60. let",
+        "isCorrect": true
+      },
+      {
+        "text": "na začátku 80. let",
+        "isCorrect": false
+      },
+      {
+        "text": "na začátku 70. let",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který první Čech hrál v zámořské NBA?",
+    "answers": [
+      {
+        "text": "Tomáš Satoranský",
+        "isCorrect": false
+      },
+      {
+        "text": "Jiří Zídek",
+        "isCorrect": true
+      },
+      {
+        "text": "Jiří Welsch",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "V kolika letech nazpívala Dara Rolincová společně s Karlem Gottem píseň \"Zvonky štěstí\"?",
+    "answers": [
+      {
+        "text": "10",
+        "isCorrect": false
+      },
+      {
+        "text": "12",
+        "isCorrect": true
+      },
+      {
+        "text": "8",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Co znamená v češtině název písničky \"Despacito\"?",
+    "answers": [
+      {
+        "text": "Pomalu",
+        "isCorrect": true
+      },
+      {
+        "text": "Klidně",
+        "isCorrect": false
+      },
+      {
+        "text": "Rychle",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Kdo obdržel za film \"Přelet nad kukaččím hnízdem\" Oscara?",
+    "answers": [
+      {
+        "text": "Sydney Lassick",
+        "isCorrect": false
+      },
+      {
+        "text": "Jack Nicholson",
+        "isCorrect": true
+      },
+      {
+        "text": "Michael Douglas",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Státní hymna které země nemá text?",
+    "answers": [
+      {
+        "text": "Francie",
+        "isCorrect": false
+      },
+      {
+        "text": "Španělska",
+        "isCorrect": true
+      },
+      {
+        "text": "Polska",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Yukon Gold je populární druh ...? ",
+    "answers": [
+      {
+        "text": "zelí",
+        "isCorrect": false
+      },
+      {
+        "text": "jablek",
+        "isCorrect": false
+      },
+      {
+        "text": "brambor",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Jak se jmenoval muž, který vytvořil značku Porsche?",
+    "answers": [
+      {
+        "text": "Ferdinand",
+        "isCorrect": true
+      },
+      {
+        "text": "Karl",
+        "isCorrect": false
+      },
+      {
+        "text": "Adolf",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Xindl X je vlastním jménem ....?",
+    "answers": [
+      {
+        "text": "Jiří Chládek",
+        "isCorrect": false
+      },
+      {
+        "text": "Ondřej Ládek",
+        "isCorrect": true
+      },
+      {
+        "text": "Pavel Sládek",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Ve kterém roce byla založena Česká pošta?\n",
+    "answers": [
+      {
+        "text": "1990",
+        "isCorrect": false
+      },
+      {
+        "text": "1992",
+        "isCorrect": false
+      },
+      {
+        "text": "1993",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Jak se nazývá nejstarší národní park na světě?\n",
+    "answers": [
+      {
+        "text": "Yellowstone",
+        "isCorrect": true
+      },
+      {
+        "text": "Abisko ",
+        "isCorrect": false
+      },
+      {
+        "text": "Sarek ",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "V kterém roce byla založena Univerzita Karlova?\n",
+    "answers": [
+      {
+        "text": "1346",
+        "isCorrect": false
+      },
+      {
+        "text": "1348",
+        "isCorrect": true
+      },
+      {
+        "text": "1347",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Kde sídlí nejvyšší soud v ČR?\n",
+    "answers": [
+      {
+        "text": "Praha",
+        "isCorrect": false
+      },
+      {
+        "text": "Brno",
+        "isCorrect": true
+      },
+      {
+        "text": "Praha a Brno",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jak se jmenuje současný ministr/ministryně vnitra?\n",
+    "answers": [
+      {
+        "text": "Lubomír Metnar",
+        "isCorrect": true
+      },
+      {
+        "text": "Zuzana Mrázová",
+        "isCorrect": false
+      },
+      {
+        "text": "Jeroným Tejc ",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jak se jmenuje hlavní město Ekvádoru?\n",
+    "answers": [
+      {
+        "text": "Quito ",
+        "isCorrect": true
+      },
+      {
+        "text": "Bogota ",
+        "isCorrect": false
+      },
+      {
+        "text": "Lima",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "V jakém roce byl vynalezen tlakový hrnec?\n",
+    "answers": [
+      {
+        "text": "1667",
+        "isCorrect": false
+      },
+      {
+        "text": "1679",
+        "isCorrect": true
+      },
+      {
+        "text": "1692",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který psychologický směr zdůrazňuje nevědomí?\n",
+    "answers": [
+      {
+        "text": "gestalt psycholgie ",
+        "isCorrect": false
+      },
+      {
+        "text": "behaviorismus ",
+        "isCorrect": false
+      },
+      {
+        "text": "psychoanalýza",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Který orgán produkuje inzulin?\n",
+    "answers": [
+      {
+        "text": "tenké střevo ",
+        "isCorrect": false
+      },
+      {
+        "text": "slinivka břišní ",
+        "isCorrect": true
+      },
+      {
+        "text": "břišní tělíska ",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Co znamená pojem „exekutiva“?\n",
+    "answers": [
+      {
+        "text": "soudní moc ",
+        "isCorrect": false
+      },
+      {
+        "text": "zákonodárná moc ",
+        "isCorrect": false
+      },
+      {
+        "text": "výkonná moc ",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Co znamená zkratka VTOS?\n",
+    "answers": [
+      {
+        "text": "výkon trestu odnětí svobody ",
+        "isCorrect": true
+      },
+      {
+        "text": "výkon trestu obecně prospěšných prací",
+        "isCorrect": false
+      },
+      {
+        "text": "vazební trest ochranného stíhání",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jakého roku bylo založeno sokolovské gymnázium?\n",
+    "answers": [
+      {
+        "text": "1947",
+        "isCorrect": false
+      },
+      {
+        "text": "1946",
+        "isCorrect": true
+      },
+      {
+        "text": "1948",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Ve kterém roce tragicky zemřela Marilyn Monroe?\n",
+    "answers": [
+      {
+        "text": "1961",
+        "isCorrect": false
+      },
+      {
+        "text": "1963",
+        "isCorrect": false
+      },
+      {
+        "text": "1962",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Kolikrát byl Václav Havel zvolen prezidentem?\n",
+    "answers": [
+      {
+        "text": "4 krát ",
+        "isCorrect": true
+      },
+      {
+        "text": "3 krát ",
+        "isCorrect": false
+      },
+      {
+        "text": "2 krát ",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jak se nazývá největší ostrov v Karibiku?\n",
+    "answers": [
+      {
+        "text": "Jamajka ",
+        "isCorrect": false
+      },
+      {
+        "text": "Hispaniola ",
+        "isCorrect": false
+      },
+      {
+        "text": "Kuba ",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Jak se nazývá největší letiště na světě (rozlohou)?",
+    "answers": [
+      {
+        "text": "London Heathrow",
+        "isCorrect": false
+      },
+      {
+        "text": "King Fahd International Airport",
+        "isCorrect": true
+      },
+      {
+        "text": "Denver International Airport",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jak je dlouhý Ejpovický tunel?\n",
+    "answers": [
+      {
+        "text": "4 130 m",
+        "isCorrect": false
+      },
+      {
+        "text": "4 210 m",
+        "isCorrect": false
+      },
+      {
+        "text": "4 150 m ",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "V jakém roce byla zprovozněna linka metra B v Praze?\n",
+    "answers": [
+      {
+        "text": "1986",
+        "isCorrect": false
+      },
+      {
+        "text": "1982",
+        "isCorrect": false
+      },
+      {
+        "text": "1985",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Kolikátý ročník Mezinárodního filmového festivalu v Karlových Varech se bude letos konat?\n",
+    "answers": [
+      {
+        "text": "60.ročník ",
+        "isCorrect": true
+      },
+      {
+        "text": "59.ročník ",
+        "isCorrect": false
+      },
+      {
+        "text": "61.ročník",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Kolik schodů má Eiffelova věž?\n",
+    "answers": [
+      {
+        "text": "1 650 schodů",
+        "isCorrect": false
+      },
+      {
+        "text": "1 665 schodů ",
+        "isCorrect": true
+      },
+      {
+        "text": "1 640 schodů ",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Co znamená demokracie v přímém slova smyslu?\n",
+    "answers": [
+      {
+        "text": "Vláda zákona ",
+        "isCorrect": false
+      },
+      {
+        "text": "Vláda většiny ",
+        "isCorrect": false
+      },
+      {
+        "text": "Vláda lidu ",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Jaká je hloubka propasti Macocha?\n",
+    "answers": [
+      {
+        "text": "90 m",
+        "isCorrect": false
+      },
+      {
+        "text": "125 m",
+        "isCorrect": false
+      },
+      {
+        "text": "138 m",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Co je to syllogismus?\n",
+    "answers": [
+      {
+        "text": "logický úsudek ",
+        "isCorrect": true
+      },
+      {
+        "text": "filozofický směr ",
+        "isCorrect": false
+      },
+      {
+        "text": "druh metafory ",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Který hudební interpret vydal album Camp?",
+    "answers": [
+      {
+        "text": "Childish Gambino",
+        "isCorrect": true
+      },
+      {
+        "text": "Kanye West",
+        "isCorrect": false
+      },
+      {
+        "text": "Kendrick Lamar",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Která Česká zoo je nejstarší?",
+    "answers": [
+      {
+        "text": "v Brně",
+        "isCorrect": false
+      },
+      {
+        "text": "v Praze",
+        "isCorrect": false
+      },
+      {
+        "text": "v Liberci",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Jak se jmenuje nejdelší železniční tunel v ČR?",
+    "answers": [
+      {
+        "text": "Ejpovický tunel",
+        "isCorrect": true
+      },
+      {
+        "text": "Březenský tunel",
+        "isCorrect": false
+      },
+      {
+        "text": "tunel Blanka",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Jak se latinsky nazývá vlk obecný?",
+    "answers": [
+      {
+        "text": "Ursus arctos",
+        "isCorrect": false
+      },
+      {
+        "text": "Canis lupus",
+        "isCorrect": true
+      },
+      {
+        "text": "Felis catus",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "answers": [
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Celkem otázek",
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "text": "76",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Zkontrolováno/Opraveno",
+    "answers": [
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "text": "75",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "ZAMÍCHANÉ",
+    "answers": [
+      {
+        "isCorrect": true
+      },
+      {
+        "isCorrect": false
+      },
+      {
+        "isCorrect": false
+      }
+    ]
+  }
+]
