@@ -10,7 +10,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server);
 
-const API_KEY = "AIzaSyCCW4dkyqUY4Qj6XSs2IoTdRmBm2dgkBr4";
+const API_KEY = "###############################";
 const RANGE = "List 1!A2:D";
 const RANGE_FINALE = "List 1!A2:B200";
 const SHEET_ID_STOLY = "190uf1hqx_XY7aJP9Gq8oMvjya3idZRXt-3uOOvZAvnU";
